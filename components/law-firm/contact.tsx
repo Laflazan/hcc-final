@@ -1,55 +1,117 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import type { ContactFormValues } from "@/lib/contact";
+import { getDictionary, type Locale } from "@/lib/site";
 
-export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: "",
-  })
+type FormState = {
+  status: "idle" | "submitting" | "success" | "error";
+  message: string | null;
+  fieldErrors: Partial<Record<keyof ContactFormValues, string[]>>;
+};
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log(formData)
+const initialFormValues: ContactFormValues = {
+  name: "",
+  email: "",
+  company: "",
+  message: "",
+};
+
+export function Contact({ locale }: { locale: Locale }) {
+  const dictionary = getDictionary(locale);
+  const [formData, setFormData] = useState<ContactFormValues>(initialFormValues);
+  const [formState, setFormState] = useState<FormState>({
+    status: "idle",
+    message: null,
+    fieldErrors: {},
+  });
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    setFormState({
+      status: "submitting",
+      message: null,
+      fieldErrors: {},
+    });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          locale,
+        }),
+      });
+
+      const payload = (await response.json()) as {
+        success: boolean;
+        message: string;
+        errors?: Partial<Record<keyof ContactFormValues, string[]>>;
+      };
+
+      if (!response.ok || !payload.success) {
+        setFormState({
+          status: "error",
+          message: payload.message,
+          fieldErrors: payload.errors ?? {},
+        });
+        return;
+      }
+
+      setFormData(initialFormValues);
+      setFormState({
+        status: "success",
+        message: payload.message,
+        fieldErrors: {},
+      });
+    } catch {
+      setFormState({
+        status: "error",
+        message: dictionary.contact.validation.failure,
+        fieldErrors: {},
+      });
+    }
   }
 
   return (
-    <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
+    <section id="contact" className="relative overflow-hidden py-24 lg:py-32">
       <div className="absolute inset-0 -z-10">
         <img
           src="/contact-bg.png"
-          alt="HCC Avukatlık Bürosu"
-          className="w-full h-full object-cover opacity-25"
+          alt={locale === "tr" ? "HCC Avukatlık Bürosu" : "HCC Law Office"}
+          className="h-full w-full object-cover opacity-25"
         />
       </div>
 
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid gap-16 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="h-px w-16 bg-gold mb-8" />
+            <div className="mb-8 h-px w-16 bg-gold" />
 
             <motion.h2
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="font-serif text-4xl md:text-5xl font-medium text-white tracking-tight"
+              className="font-serif text-4xl font-medium tracking-tight text-white md:text-5xl"
             >
-              İletişime Geçin
+              {dictionary.contact.title}
             </motion.h2>
 
             <motion.p
@@ -57,10 +119,9 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="mt-6 text-lg text-white/80 leading-relaxed"
+              className="mt-6 text-lg leading-relaxed text-white/80"
             >
-              Hukuki ihtiyaçlarınız doğrultusunda bizimle iletişime geçebilirsiniz.
-              Uzman ekibimiz, size en uygun çözümü sunmak için hazırdır.
+              {dictionary.contact.description}
             </motion.p>
 
             <motion.div
@@ -71,38 +132,48 @@ export function Contact() {
               className="mt-10 space-y-6"
             >
               <div className="flex items-start gap-4">
-                <MapPin className="h-5 w-5 text-gold mt-1" />
+                <MapPin className="mt-1 h-5 w-5 text-gold" />
                 <div>
-                  <p className="text-sm text-white/60 uppercase tracking-wider">Adres</p>
+                  <p className="text-sm uppercase tracking-wider text-white/60">
+                    {dictionary.contact.addressLabel}
+                  </p>
                   <p className="mt-1 text-white">
-                    Balmumcu Mah. Gazi Umur Paşa Sok. No:24/7
-                    <br />
-                    Beşiktaş / İstanbul
+                    {dictionary.contact.address.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <Phone className="h-5 w-5 text-gold mt-1" />
+                <Phone className="mt-1 h-5 w-5 text-gold" />
                 <div>
-                  <p className="text-sm text-white/60 uppercase tracking-wider">Telefon</p>
-                  <p className="mt-1 text-white">0212 216 07 24</p>
+                  <p className="text-sm uppercase tracking-wider text-white/60">
+                    {dictionary.contact.phoneLabel}
+                  </p>
+                  <p className="mt-1 text-white">{dictionary.contact.phone}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <Mail className="h-5 w-5 text-gold mt-1" />
+                <Mail className="mt-1 h-5 w-5 text-gold" />
                 <div>
-                  <p className="text-sm text-white/60 uppercase tracking-wider">E-posta</p>
-                  <p className="mt-1 text-white">info@hcc.av.tr</p>
+                  <p className="text-sm uppercase tracking-wider text-white/60">
+                    {dictionary.contact.emailLabel}
+                  </p>
+                  <p className="mt-1 text-white">{dictionary.contact.email}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <Clock className="h-5 w-5 text-gold mt-1" />
+                <Clock className="mt-1 h-5 w-5 text-gold" />
                 <div>
-                  <p className="text-sm text-white/60 uppercase tracking-wider">Çalışma Saatleri</p>
-                  <p className="mt-1 text-white">Pazartesi – Cuma, 09:00 – 18:00</p>
+                  <p className="text-sm uppercase tracking-wider text-white/60">
+                    {dictionary.contact.hoursLabel}
+                  </p>
+                  <p className="mt-1 text-white">{dictionary.contact.hours}</p>
                 </div>
               </div>
             </motion.div>
@@ -113,83 +184,119 @@ export function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white/10 backdrop-blur-md p-8 lg:p-12 border border-white/20 rounded-2xl"
+            className="rounded-2xl border border-white/20 bg-white/10 p-8 backdrop-blur-md lg:p-12"
           >
             <h3 className="font-serif text-2xl font-medium text-white">
-              Bize Mesaj Gönderin
+              {dictionary.contact.formTitle}
             </h3>
 
-            <p className="mt-2 text-white/70">
-              Taleplerinize en kısa sürede dönüş yapılacaktır.
-            </p>
+            <p className="mt-2 text-white/70">{dictionary.contact.formDescription}</p>
 
-            <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+            <form onSubmit={handleSubmit} className="mt-8 space-y-6" noValidate>
               <div>
                 <label className="block text-sm font-medium text-white">
-                  Ad Soyad
+                  {dictionary.contact.nameLabel}
                 </label>
                 <Input
                   type="text"
                   required
-                  className="mt-2 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                  className="mt-2 border-white/20 bg-white/10 text-white placeholder:text-white/50"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(event) =>
+                    setFormData({ ...formData, name: event.target.value })
+                  }
                 />
+                {formState.fieldErrors.name?.[0] && (
+                  <p className="mt-2 text-sm text-[#f2c2c2]">
+                    {formState.fieldErrors.name[0]}
+                  </p>
+                )}
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-white">
-                  E-posta
+                  {dictionary.contact.emailInputLabel}
                 </label>
                 <Input
                   type="email"
                   required
-                  className="mt-2 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                  className="mt-2 border-white/20 bg-white/10 text-white placeholder:text-white/50"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(event) =>
+                    setFormData({ ...formData, email: event.target.value })
+                  }
                 />
+                {formState.fieldErrors.email?.[0] && (
+                  <p className="mt-2 text-sm text-[#f2c2c2]">
+                    {formState.fieldErrors.email[0]}
+                  </p>
+                )}
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-white">
-                  Şirket / Kurum (Opsiyonel)
+                  {dictionary.contact.companyLabel}
                 </label>
                 <Input
                   type="text"
-                  className="mt-2 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                  className="mt-2 border-white/20 bg-white/10 text-white placeholder:text-white/50"
                   value={formData.company}
-                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  onChange={(event) =>
+                    setFormData({ ...formData, company: event.target.value })
+                  }
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-white">
-                  Mesajınız
+                  {dictionary.contact.messageLabel}
                 </label>
                 <Textarea
                   required
                   rows={5}
-                  className="mt-2 bg-white/10 border-white/20 text-white placeholder:text-white/50 resize-none"
+                  className="mt-2 resize-none border-white/20 bg-white/10 text-white placeholder:text-white/50"
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(event) =>
+                    setFormData({ ...formData, message: event.target.value })
+                  }
                 />
+                {formState.fieldErrors.message?.[0] && (
+                  <p className="mt-2 text-sm text-[#f2c2c2]">
+                    {formState.fieldErrors.message[0]}
+                  </p>
+                )}
               </div>
 
               <Button
                 type="submit"
                 size="lg"
+                disabled={formState.status === "submitting"}
                 className="w-full bg-white text-black hover:bg-white/90"
               >
-                Mesaj Gönder
+                {formState.status === "submitting"
+                  ? dictionary.contact.submitting
+                  : dictionary.contact.submit}
               </Button>
 
-              <p className="text-xs text-white/50 text-center">
-                Bu formu göndererek gizlilik politikamızı kabul etmiş olursunuz.
+              {formState.message && (
+                <p
+                  className={`text-center text-sm ${
+                    formState.status === "success"
+                      ? "text-[#d9f0d4]"
+                      : "text-[#f2c2c2]"
+                  }`}
+                >
+                  {formState.message}
+                </p>
+              )}
+
+              <p className="text-center text-xs text-white/50">
+                {dictionary.contact.consent}
               </p>
             </form>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
