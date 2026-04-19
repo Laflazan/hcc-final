@@ -1,8 +1,5 @@
-import { buildPageMetadata } from "@/lib/site";
-import { HomePage } from "@/components/pages/home-page";
-
-export const metadata = buildPageMetadata("tr", "home");
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <HomePage locale="tr" />;
+  redirect("/en");
 }
