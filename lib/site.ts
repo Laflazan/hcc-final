@@ -4,6 +4,7 @@ import {
   getFeaturedArticle as getLocalizedFeaturedArticle,
   translateArticlePath,
 } from "@/lib/articles";
+import { translateServicePath } from "@/lib/services";
 
 export type Locale = "tr" | "en";
 export type RouteKey =
@@ -79,6 +80,12 @@ export function switchLocalePath(pathname: string, targetLocale: Locale) {
 
   if (translatedArticlePath) {
     return translatedArticlePath;
+  }
+
+  const translatedServicePath = translateServicePath(pathname, targetLocale);
+
+  if (translatedServicePath) {
+    return translatedServicePath;
   }
 
   if (targetLocale === "en") {

@@ -13,21 +13,23 @@ type ServicePageProps = {
 };
 
 export async function generateStaticParams() {
-  return getServiceStaticParams("tr");
+  return getServiceStaticParams("en");
 }
 
 export async function generateMetadata({ params }: ServicePageProps) {
   const { slug } = await params;
-  return buildServiceMetadata("tr", slug) ?? {};
+  return buildServiceMetadata("en", slug) ?? {};
 }
 
-export default async function ServiceDetailRoute({ params }: ServicePageProps) {
+export default async function EnglishServiceDetailRoute({
+  params,
+}: ServicePageProps) {
   const { slug } = await params;
-  const service = getServiceBySlug("tr", slug);
+  const service = getServiceBySlug("en", slug);
 
   if (!service) {
     notFound();
   }
 
-  return <ServiceDetailPage service={service} locale="tr" />;
+  return <ServiceDetailPage service={service} locale="en" />;
 }
