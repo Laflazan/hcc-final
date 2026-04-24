@@ -32,7 +32,7 @@ export function ArticlesPage({ locale }: { locale: Locale }) {
               {dictionary.insights.collectionLabel}
             </span>
 
-            <h1 className="font-serif text-4xl leading-[1.02] tracking-[-0.03em] text-foreground sm:text-5xl md:text-7xl xl:text-[84px]">
+            <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl">
               {dictionary.metadata.articles.title}
             </h1>
           </div>

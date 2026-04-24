@@ -9,19 +9,19 @@ export function AboutPage({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-background pt-32 pb-20 text-center lg:pt-36 lg:pb-24 border-b border-border">
+      <section className="relative overflow-hidden bg-background pt-32 pb-20 text-left lg:pt-36 lg:pb-24 border-b border-border">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(200,169,106,0.10),transparent_38%)]" />
 
         <div className="relative mx-auto max-w-4xl px-6">
-          <div className="mb-6 flex justify-center">
+          <div className="mb-6 flex justify-start">
             <div className="h-px w-16 bg-gold" />
           </div>
 
-          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl">
             {dictionary.metadata.about.title}
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             {dictionary.pages.aboutIntro}
           </p>
         </div>

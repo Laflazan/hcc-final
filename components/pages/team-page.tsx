@@ -28,6 +28,7 @@ export function TeamPage({ locale }: TeamPageProps) {
           officePhone: "Ofis Telefonu",
           mobilePhone: "Cep Telefonu",
           education: "Eğitim",
+          biography: "Biyografi",
           languages: "Yabancı Diller",
           birthInfo: "Doğum Bilgisi",
           startYear: "Başlangıç Yılı",
@@ -38,6 +39,7 @@ export function TeamPage({ locale }: TeamPageProps) {
           officePhone: "Office Phone",
           mobilePhone: "Mobile Phone",
           education: "Education",
+          biography: "Biography",
           languages: "Languages",
           birthInfo: "Birth Information",
           startYear: "Start Year",
@@ -68,7 +70,7 @@ export function TeamPage({ locale }: TeamPageProps) {
     };
   }, [selectedMember]);
 
-  const detailItems = selectedMember
+  const contactItems = selectedMember
     ? [
         selectedMember.email
           ? {
@@ -91,12 +93,6 @@ export function TeamPage({ locale }: TeamPageProps) {
               href: getTelHref(selectedMember.mobilePhone),
             }
           : null,
-        selectedMember.education
-          ? {
-              label: detailLabels.education,
-              value: selectedMember.education,
-            }
-          : null,
         selectedMember.birthInfo
           ? {
               label: detailLabels.birthInfo,
@@ -111,18 +107,25 @@ export function TeamPage({ locale }: TeamPageProps) {
           : null,
       ].filter(Boolean)
     : [];
+  const educationItems = selectedMember
+    ? Array.isArray(selectedMember.education)
+      ? selectedMember.education
+      : selectedMember.education
+        ? [selectedMember.education]
+        : []
+    : [];
 
   return (
     <div className="bg-background">
-      <section className="pt-40 pb-20 text-center">
+      <section className="pt-40 pb-20 text-left">
         <div className="mx-auto max-w-4xl px-6">
-          <div className="mx-auto mb-6 h-px w-16 bg-gold" />
+          <div className="mb-6 h-px w-16 bg-gold" />
 
-          <h1 className="font-serif text-4xl text-foreground md:text-5xl">
+          <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl">
             {dictionary.metadata.team.title}
           </h1>
 
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             {dictionary.team.pageIntro}
           </p>
         </div>
@@ -173,14 +176,6 @@ export function TeamPage({ locale }: TeamPageProps) {
                   </span>
                 </a>
 
-                {member.expertise[0] ? (
-                  <div className="absolute left-4 top-4">
-                    <span className="rounded-full border border-gold/35 bg-gold/12 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.18em] text-gold backdrop-blur-sm">
-                      {member.expertise[0]}
-                    </span>
-                  </div>
-                ) : null}
-
                 <div className="absolute bottom-0 p-6 text-white">
                   <div className="transition duration-500 md:translate-y-2 md:group-hover:translate-y-0">
                     <h3 className="font-serif text-[22px] tracking-tight text-white">{member.name}</h3>
@@ -213,7 +208,7 @@ export function TeamPage({ locale }: TeamPageProps) {
             role="dialog"
             aria-modal="true"
             aria-labelledby="team-member-title"
-            className="relative w-full max-w-3xl rounded-2xl bg-background p-8 shadow-2xl"
+            className="relative max-h-[calc(100vh-3rem)] w-full max-w-3xl overflow-y-auto rounded-2xl bg-background p-8 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -236,9 +231,67 @@ export function TeamPage({ locale }: TeamPageProps) {
               {selectedMember.longDescription}
             </p>
 
-            {detailItems.length > 0 || selectedMember.languages?.length ? (
+            {educationItems.length ? (
+              <div className="mt-8">
+                <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
+                  {detailLabels.education}
+                </p>
+                <div className="mt-4 grid gap-4">
+                  {educationItems.map((item, index) => (
+                    <div
+                      key={`${selectedMember.name}-education-${index}`}
+                      className="rounded-xl border border-border bg-secondary/40 p-4"
+                    >
+                      <p className="whitespace-pre-line text-sm leading-6 text-foreground">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {selectedMember.biography?.length ? (
+              <div className="mt-8 border-t border-border pt-6">
+                <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
+                  {detailLabels.biography}
+                </p>
+                <div className="mt-4 space-y-4">
+                  {selectedMember.biography.map((paragraph, index) => (
+                    <p
+                      key={`${selectedMember.name}-biography-${index}`}
+                      className="text-sm leading-7 text-muted-foreground"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {selectedMember.languages?.length ? (
+              <div className="mt-8 border-t border-border pt-6">
+                <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
+                  {detailLabels.languages}
+                </p>
+                <div className="mt-4 rounded-xl border border-border bg-secondary/40 p-4">
+                  <div className="flex flex-wrap gap-2">
+                    {selectedMember.languages.map((language) => (
+                      <span
+                        key={language}
+                        className="rounded-full border border-border px-3 py-1.5 text-sm text-muted-foreground"
+                      >
+                        {language}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : null}
+
+            {contactItems.length > 0 ? (
               <div className="mt-8 grid gap-4 border-t border-border pt-6 md:grid-cols-2">
-                {detailItems.map((item) => {
+                {contactItems.map((item) => {
                   if (!item) {
                     return null;
                   }
@@ -266,24 +319,6 @@ export function TeamPage({ locale }: TeamPageProps) {
                     </div>
                   );
                 })}
-
-                {selectedMember.languages?.length ? (
-                  <div className="rounded-xl border border-border bg-secondary/40 p-4 md:col-span-2">
-                    <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
-                      {detailLabels.languages}
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {selectedMember.languages.map((language) => (
-                        <span
-                          key={language}
-                          className="rounded-full border border-border px-3 py-1.5 text-sm text-muted-foreground"
-                        >
-                          {language}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
               </div>
             ) : null}
 

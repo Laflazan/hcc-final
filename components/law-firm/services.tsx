@@ -26,16 +26,16 @@ export function Services({ locale }: { locale: Locale }) {
   return (
     <section id="services" className="bg-background pt-16 pb-24 lg:pt-20 lg:pb-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-8 flex justify-center">
+        <div className="max-w-3xl text-left">
+          <div className="mb-8 flex justify-start">
             <div className="h-px w-16 bg-gold" />
           </div>
 
-          <h2 className="font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h2 className="font-serif text-4xl font-medium tracking-tight text-foreground md:text-5xl">
             {dictionary.services.title}
           </h2>
 
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             {dictionary.services.description}
           </p>
         </div>
