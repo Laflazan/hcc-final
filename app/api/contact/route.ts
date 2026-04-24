@@ -28,16 +28,6 @@ export async function POST(request: Request) {
       );
     }
 
-    const { name, email, company, message } = parsed.data;
-
-    console.info("New contact request received.", {
-      locale,
-      name,
-      email,
-      company,
-      messagePreview: message.slice(0, 120),
-    });
-
     return NextResponse.json({
       success: true,
       message: dictionary.contact.validation.success,

@@ -6,9 +6,14 @@ export default function GlobalError({
   error: Error & { digest?: string }
 }) {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
+  const isDevelopment = process.env.NODE_ENV !== 'production'
+  const summary = isDevelopment
+    ? error.message || 'Unknown error'
+    : 'Something went wrong while loading this page. Please refresh and try again.'
 
-  // Log the error to the console so it will be forwarded to server logs and captured by auto-fix
-  console.error(error)
+  if (isDevelopment) {
+    console.error(error)
+  }
 
   return (
     <html>
@@ -124,14 +129,12 @@ export default function GlobalError({
               </p>
             </div>
           </div>
-          <div className="error-summary">
-            {error.message || 'Unknown error'}
-          </div>
-          {error.stack && (
+          <div className="error-summary">{summary}</div>
+          {isDevelopment && error.stack && (
             <div className="error-details-wrapper">
               <details className="error-details">
                 <summary>
-                  <span className="chevron">▼</span>
+                  <span className="chevron">&#9660;</span>
                   View full error trace
                 </summary>
               </details>
