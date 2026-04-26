@@ -14,8 +14,7 @@ export function About({ locale }: { locale: Locale }) {
           fill
           sizes="100vw"
           quality={70}
-          className="h-full w-full scale-105 object-cover opacity-60"
-        />
+className="h-full w-full scale-105 object-cover opacity-60"         />
       </div>
 
       {/* MAIN DARK GRADIENT (LIGHTENED) */}

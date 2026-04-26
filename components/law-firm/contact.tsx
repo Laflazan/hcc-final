@@ -139,21 +139,28 @@ export function Contact({ locale }: { locale: Locale }) {
               viewport={{ once: true }}
               className="mt-10 space-y-6"
             >
-              <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] sm:px-5">
-                <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold" />
-                <div>
-                  <p className="text-sm uppercase tracking-[0.18em] text-white/60">
-                    {dictionary.contact.addressLabel}
-                  </p>
-                  <p className="mt-2 break-words text-sm leading-relaxed text-white sm:text-base">
-                    {dictionary.contact.address.map((line) => (
-                      <span key={line} className="block">
-                        {line}
-                      </span>
-                    ))}
-                  </p>
-                </div>
-              </div>
+          <a
+  href="https://www.google.com/maps/place/HCC+Avukatlık+Bürosu/@41.058915,29.0116851,17z"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <div className="flex cursor-pointer items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] transition duration-300 hover:scale-[1.02] hover:border-gold/50 sm:px-5">
+    <MapPin className="mt-1 h-5 w-5 shrink-0 text-gold" />
+    <div>
+      <p className="text-sm uppercase tracking-[0.18em] text-white/60">
+        {dictionary.contact.addressLabel}
+      </p>
+      <p className="mt-2 break-words text-sm leading-relaxed text-white sm:text-base">
+        {dictionary.contact.address.map((line) => (
+          <span key={line} className="block">
+            {line}
+          </span>
+        ))}
+      </p>
+    </div>
+  </div>
+</a>
 
               <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] sm:px-5">
                 <Phone className="mt-1 h-5 w-5 shrink-0 text-gold" />

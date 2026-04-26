@@ -7,7 +7,7 @@ export function Hero({ locale }: { locale: Locale }) {
   const dictionary = getDictionary(locale);
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-[#12070A] text-white">
+    <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#12070A] text-white">
       {/* Background image */}
       <Image
         src="/istanbul-hero.jpg"
@@ -15,7 +15,7 @@ export function Hero({ locale }: { locale: Locale }) {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-center opacity-70"
+        className="object-cover object-[85%_center] md:object-center opacity-70"
       />
 
       {/* Image darkening */}
