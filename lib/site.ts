@@ -472,7 +472,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
   },
   {
     name: "Osman Oy",
-    role: "Kıdemli Danışman",
+    role: "Kıdemli Danışman Avukat ",
     description: "Uzun yıllara dayanan mesleki tecrübesiyle hukuk, finans ve gayrimenkul alanlarında danışmanlık sunmaktadır.",
     longDescription: "Av. Osman Oy, 1974 yılından bu yana avukatlık mesleğini sürdürmekte olup, hukuk, finans ve gayrimenkul alanlarında müvekkillerine danışmanlık hizmeti sunmaktadır.",
     expertise: [
@@ -923,7 +923,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         },
         {
           name: "Osman Oy",
-          role: "Senior of Counsel",
+          role: "Senior of Counsel Law",
           image: "/osmann.png",
           description:
             "Applies a structured and forward-looking approach to identifying legal risk and safeguarding client interests at every stage of a matter.",
