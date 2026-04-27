@@ -13,7 +13,11 @@ export type RouteKey =
   | "services"
   | "team"
   | "articles"
-  | "contact";
+  | "contact"
+  | "privacyPolicy"
+  | "termsOfUse"
+  | "cookiePolicy"
+  | "privacyNotice";
 
 const SITE_URL = "https://hcc.av.tr";
 export const LINKEDIN_COMPANY_URL =
@@ -43,6 +47,22 @@ export const routeMap: Record<RouteKey, Record<Locale, string>> = {
   contact: {
     tr: "/iletisim",
     en: "/en/contact",
+  },
+  privacyPolicy: {
+    tr: "/gizlilik-politikasi",
+    en: "/en/privacy-policy",
+  },
+  termsOfUse: {
+    tr: "/kullanim-sartlari",
+    en: "/en/terms-of-use",
+  },
+  cookiePolicy: {
+    tr: "/cerez-politikasi",
+    en: "/en/cookie-policy",
+  },
+  privacyNotice: {
+    tr: "/aydinlatma-metni",
+    en: "/en/privacy-notice",
   },
 };
 
@@ -152,7 +172,7 @@ type SiteDictionary = {
     switchTo: string;
     shortCurrent: string;
   };
-  metadata: Record<RouteKey, PageMetadataContent>;
+  metadata: Record<string, PageMetadataContent>;
   navbar: {
     about: string;
     services: string;
@@ -680,10 +700,10 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         { name: "İletişim", routeKey: "contact" },
       ],
       legal: [
-        { name: "Gizlilik Politikası" },
-        { name: "Kullanım Şartları" },
-        { name: "Çerez Politikası" },
-        { name: "Aydınlatma Metni" },
+        { name: "Gizlilik Politikası", routeKey: "privacyPolicy" },
+        { name: "Kullanım Şartları", routeKey: "termsOfUse" },
+        { name: "Çerez Politikası", routeKey: "cookiePolicy" },
+        { name: "Aydınlatma Metni", routeKey: "privacyNotice" },
       ],
       copyright: "HCC Avukatlık Bürosu. Tüm hakları saklıdır.",
       disclaimer:
@@ -1120,10 +1140,10 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         { name: "Contact", routeKey: "contact" },
       ],
       legal: [
-        { name: "Privacy Policy" },
-        { name: "Terms of Use" },
-        { name: "Cookie Policy" },
-        { name: "Privacy Notice" },
+        { name: "Privacy Policy", routeKey: "privacyPolicy" },
+        { name: "Terms of Use", routeKey: "termsOfUse" },
+        { name: "Cookie Policy", routeKey: "cookiePolicy" },
+        { name: "Privacy Notice", routeKey: "privacyNotice" },
       ],
       copyright: "HCC Law Office. All rights reserved.",
       disclaimer:

@@ -23,6 +23,9 @@ const initialFormValues: ContactFormValues = {
   message: "",
 };
 
+const HCC_MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=HCC%20Avukatlık%20Bürosu%20Balmumcu%20Gazi%20Umur%20Paşa%20Sk.%20No%3A24%2F7%20Beşiktaş%20İstanbul";
+
 export function Contact({ locale }: { locale: Locale }) {
   const dictionary = getDictionary(locale);
   const [formData, setFormData] = useState<ContactFormValues>(initialFormValues);
@@ -140,7 +143,7 @@ export function Contact({ locale }: { locale: Locale }) {
               className="mt-10 space-y-6"
             >
           <a
-  href="https://www.google.com/maps/place/HCC+Avukatlık+Bürosu/@41.058915,29.0116851,17z"
+  href={HCC_MAPS_URL}
   target="_blank"
   rel="noopener noreferrer"
   className="block"

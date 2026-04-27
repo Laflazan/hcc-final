@@ -125,7 +125,16 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               {dictionary.footer.legal.map((link) => (
                 <li key={link.name}>
-                  <FooterPlaceholderLink label={link.name} />
+                  {link.routeKey ? (
+                    <Link
+                      href={getPath(locale, link.routeKey)}
+                      className="text-sm text-background/70 transition-colors hover:text-gold"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <FooterPlaceholderLink label={link.name} />
+                  )}
                 </li>
               ))}
             </ul>
