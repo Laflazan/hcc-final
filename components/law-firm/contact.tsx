@@ -26,6 +26,9 @@ const initialFormValues: ContactFormValues = {
 const HCC_MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=HCC%20Avukatlık%20Bürosu%20Balmumcu%20Gazi%20Umur%20Paşa%20Sk.%20No%3A24%2F7%20Beşiktaş%20İstanbul";
 
+const HCC_PHONE_HREF = "tel:+902122160724";
+const HCC_EMAIL_HREF = "mailto:info@hcc.av.tr";
+
 export function Contact({ locale }: { locale: Locale }) {
   const dictionary = getDictionary(locale);
   const [formData, setFormData] = useState<ContactFormValues>(initialFormValues);
@@ -165,25 +168,31 @@ export function Contact({ locale }: { locale: Locale }) {
   </div>
 </a>
 
-              <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] sm:px-5">
+              <a
+                href={HCC_PHONE_HREF}
+                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] transition duration-300 hover:border-gold/50 focus-visible:border-gold/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 sm:px-5"
+              >
                 <Phone className="mt-1 h-5 w-5 shrink-0 text-gold" />
                 <div>
                   <p className="text-sm uppercase tracking-[0.18em] text-white/60">
                     {dictionary.contact.phoneLabel}
                   </p>
-                  <p className="mt-2 break-words text-sm text-white sm:text-base">{dictionary.contact.phone}</p>
+                  <p className="mt-2 break-words text-sm text-white transition-colors group-hover:text-gold sm:text-base">{dictionary.contact.phone}</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] sm:px-5">
+              <a
+                href={HCC_EMAIL_HREF}
+                className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] transition duration-300 hover:border-gold/50 focus-visible:border-gold/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 sm:px-5"
+              >
                 <Mail className="mt-1 h-5 w-5 shrink-0 text-gold" />
                 <div>
                   <p className="text-sm uppercase tracking-[0.18em] text-white/60">
                     {dictionary.contact.emailLabel}
                   </p>
-                  <p className="mt-2 break-all text-sm text-white sm:text-base">{dictionary.contact.email}</p>
+                  <p className="mt-2 break-all text-sm text-white transition-colors group-hover:text-gold sm:text-base">{dictionary.contact.email}</p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/15 px-4 py-4 backdrop-blur-[2px] sm:px-5">
                 <Clock className="mt-1 h-5 w-5 shrink-0 text-gold" />

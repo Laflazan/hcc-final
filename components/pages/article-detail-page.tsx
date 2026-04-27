@@ -5,6 +5,32 @@ import { getPath, type Locale } from "@/lib/site";
 
 const SITE_URL = "https://hcc.av.tr";
 
+function isReferencesSection(heading?: string) {
+  return heading === "Kaynakça" || heading === "References";
+}
+
+function renderTextWithSourceLinks(text: string, articleSlug: string) {
+  const parts = text.split(/(\((?:\d{1,3})\))/g);
+
+  return parts.map((part, index) => {
+    const match = part.match(/^\((\d{1,3})\)$/);
+
+    if (!match) {
+      return part;
+    }
+
+    return (
+      <a
+        key={`${articleSlug}-citation-${match[1]}-${index}`}
+        href={`#${articleSlug}-source-${match[1]}`}
+        className="font-medium text-gold transition hover:text-foreground"
+      >
+        {part}
+      </a>
+    );
+  });
+}
+
 export function ArticleDetailPage({
   article,
   locale,
@@ -76,7 +102,7 @@ export function ArticleDetailPage({
               </h1>
 
               <p className="mt-6 max-w-3xl text-[15px] leading-8 text-muted-foreground [overflow-wrap:anywhere] md:text-[17px]">
-                {article.introduction}
+                {renderTextWithSourceLinks(article.introduction, article.slug)}
               </p>
             </div>
           </header>
@@ -106,43 +132,64 @@ export function ArticleDetailPage({
             </div>
 
             <div className="space-y-12">
-              {article.sections.map((section, index) => (
-                <section key={`${article.slug}-${index}`}>
-                  {section.heading ? (
-                    <>
-                      <div className="mb-5 h-px w-14 bg-gold" />
-                      <h2 className="font-serif text-[28px] leading-tight tracking-[-0.02em] text-foreground [overflow-wrap:anywhere] sm:text-3xl">
-                        {section.heading}
-                      </h2>
-                      {section.subheading ? (
-                        <p className="mt-3 text-sm uppercase tracking-[0.18em] text-muted-foreground">
-                          {section.subheading}
-                        </p>
-                      ) : null}
-                    </>
-                  ) : null}
+              {article.sections.map((section, index) => {
+                const referencesSection = isReferencesSection(section.heading);
 
-                  <div
-                    className={`space-y-5 text-[15px] leading-8 text-muted-foreground [overflow-wrap:anywhere] md:text-base ${
-                      section.heading ? "mt-5" : ""
-                    }`}
-                  >
-                    {section.paragraphs.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
-
-                    {section.bullets?.length ? (
-                      <ul className="space-y-3 pl-5">
-                        {section.bullets.map((bullet) => (
-                          <li key={bullet} className="list-disc marker:text-gold">
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
+                return (
+                  <section key={`${article.slug}-${index}`}>
+                    {section.heading ? (
+                      <>
+                        <div className="mb-5 h-px w-14 bg-gold" />
+                        <h2 className="font-serif text-[28px] leading-tight tracking-[-0.02em] text-foreground [overflow-wrap:anywhere] sm:text-3xl">
+                          {section.heading}
+                        </h2>
+                        {section.subheading ? (
+                          <p className="mt-3 text-sm uppercase tracking-[0.18em] text-muted-foreground">
+                            {section.subheading}
+                          </p>
+                        ) : null}
+                      </>
                     ) : null}
-                  </div>
-                </section>
-              ))}
+
+                    <div
+                      className={`space-y-5 text-[15px] leading-8 text-muted-foreground [overflow-wrap:anywhere] md:text-base ${
+                        section.heading ? "mt-5" : ""
+                      }`}
+                    >
+                      {section.paragraphs.map((paragraph) => {
+                        const referenceMatch = referencesSection
+                          ? paragraph.match(/^(\d+)\s+/)
+                          : null;
+                        const sourceId = referenceMatch
+                          ? `${article.slug}-source-${referenceMatch[1]}`
+                          : undefined;
+
+                        return (
+                          <p
+                            key={paragraph}
+                            id={sourceId}
+                            className={sourceId ? "scroll-mt-28" : undefined}
+                          >
+                            {referencesSection
+                              ? paragraph
+                              : renderTextWithSourceLinks(paragraph, article.slug)}
+                          </p>
+                        );
+                      })}
+
+                      {section.bullets?.length ? (
+                        <ul className="space-y-3 pl-5">
+                          {section.bullets.map((bullet) => (
+                            <li key={bullet} className="list-disc marker:text-gold">
+                              {bullet}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
+                  </section>
+                );
+              })}
             </div>
           </div>
         </article>

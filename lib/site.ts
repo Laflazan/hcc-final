@@ -279,7 +279,6 @@ type SiteDictionary = {
     copyright: string;
     disclaimer: string;
     socialSoonLinkedIn: string;
-    socialSoonX: string;
   };
   pages: {
     aboutIntro: string;
@@ -361,7 +360,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       highlight: "Güvenilir Hukuki Yaklaşım",
       paragraphs: [
         "HCC Avukatlık Bürosu, hukukun evrensel ilkelerini temel alan, müvekkillerine etkin, güvenilir ve sürdürülebilir çözümler sunmayı amaçlayan bir hukuk bürosudur. Büromuzun kökleri, 1955 yılında mesleğe adım atan Avukat Ömer Baş ile başlayan ve üç kuşağa yayılan güçlü bir hukuk geleneğine dayanmaktadır.",
-        "Bu köklü mirasın kazandırdığı değerler ve mesleki bakış açısıyla hareket eden HCC Avukatlık Bürosu, bireyler ve şirketler başta olmak üzere geniş bir müvekkil kitlesine çeşitli hukuk alanlarında danışmanlık ve dava avukatlığı hizmeti sunmaktadır.",
+        "Bu köklü mirasın kazandırdığı değerler ve mesleki bakış açısıyla hareket eden HCC Avukatlık Bürosu, bireyler ve şirketler başta olmak üzere geniş bir müvekkil kitlesine çeşitli hukuk alanlarında danışmanlık ve  avukatlık hizmeti sunmaktadır.",
         "Büromuz, yalnızca mevcut uyuşmazlıkların çözümüne odaklanmakla kalmayıp, önleyici hukuk anlayışıyla olası riskleri önceden tespit etmeyi ve hukuki süreçleri stratejik biçimde yönetmeyi hedeflemektedir. Her dosyada özgün değerlendirme yaparak müvekkil odaklı ve çözüm temelli bir yaklaşım benimser.",
         "İnsan ilişkilerini merkeze alan çalışma kültürümüz doğrultusunda; güvene dayalı, şeffaf ve etik ilkelere bağlı bir hizmet anlayışıyla hareket ediyor, hukuki temsilin ötesinde müvekkillerimizle uzun soluklu bir çözüm ortaklığı kurmayı amaçlıyoruz.",
       ],
@@ -473,7 +472,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
     role: "Kurucu ve Yönetici Avukat",
     description: "Bireysel ve kurumsal müvekkillere danışmanlık ve dava süreçlerinde stratejik hukuki çözümler sunmaktadır.",
     longDescription: "Av. Hasan Can Cebeci, bireysel ve kurumsal müvekkillere yönelik hukuki danışmanlık, uyuşmazlık çözümü ve dava takibi alanlarında kapsamlı hizmet sunmaktadır. Özellikle ticaret ve şirketler hukuku başta olmak üzere, farklı hukuk disiplinlerinde stratejik süreç yönetimi ile müvekkillerine etkin ve sonuç odaklı çözümler sağlamaktadır.",
-    education: "Yeditepe Üniversitesi Hukuk Fakültesi",
+    education: "Yeditepe Üniversitesi Hukuk Fakültesi, İstanbul",
     biography: [
       "HCC Avukatlık Bürosu’nun kurucu ve yönetici avukatı olarak, uzun yıllara yayılan mesleki deneyimiyle bireysel ve kurumsal müvekkillere hukuki danışmanlık ile uyuşmazlıklarda çözüm yollarının oluşturulması ve dava takibi alanlarında hizmet sunmaktadır. Mesleki faaliyetleri, ağırlıklı olarak uyuşmazlık çözümü, dava stratejisi ve süreç yönetimi üzerine yoğunlaşmaktadır.",
       "Çalışma alanları arasında ticari uyuşmazlıklar, şirketler arası ihtilaflar, inşaat ve eser sözleşmelerinden kaynaklanan davalar, taahhüt ilişkileri, alacak ve sorumluluk davaları, konkordato ve iflas süreçlerinin yönetimi yer almaktadır. Özellikle karmaşık, yüksek riskli ve çok taraflı dosyalarda, sürecin başından itibaren doğru hukuki pozisyonun kurulmasına odaklanmaktadır.",
@@ -500,7 +499,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "Finans",
       "Gayrimenkul Danışmanlığı"
     ],
-    education: "İstanbul Üniversitesi Hukuk Fakültesi",
+    education: "İstanbul Üniversitesi Hukuk Fakültesi, İstanbul",
     biography: [
       "1950 yılında Erzurum'da doğmuşum. İskenderun Namık Kemal İlkokulu, Bakırköy Taş Mektep ve Pertevniyal Lisesi’nden ikincilik ile mezuniyet sonrası İstanbul Üniversitesi Hukuk Fakültesi'nde eğitimimi iyi derece ile tamamladıktan sonra, çalışma hayatına 1974 yılında avukatlık ile başladım.",
       "Daha sonra özellikle finans sektörüne duyduğum ilgi neticesi; Akbank’ın açtığı Müfettişlik sınavını kazanarak Banka Müfettişi oldum. Akbank’ta 10 yıl Müfettişlik sonrası gelen transfer teklifi üzerine eski adı ''Selanik Bankası'' olan ''Uluslararası Endüstri ve Ticaret Bankası''na Yönetmen unvanı ile işe başlayarak bu süreçte birçok büyük sorunlu kredi olayını oluşturduğum projelerle hem firmalar hem de banka açısından çözüme bağladım.",
@@ -509,9 +508,8 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "Şimdilerde de ''Hukuk, Finans ve Gayrimenkul Danışmanlığı'' nın yanı sıra ''Kitap Çalışmaları''na da devam etmekteyim."
     ],
     image: "/osmann.png",
-    email: "",
+    email: "osman.oy@hcc.av.tr",
     officePhone: "0212 216 07 24",
-    startYear: "1974"
   },
   {
     name: "Gerçek Onur Oy",
@@ -526,9 +524,14 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "Ticaret ve Şirketler Hukuku"
     ],
     education: [
-      "Fordham University School of Law, New York, ABD\nLL.M. – Bankacılık, Ticaret ve Finans Hukuku (2015)",
-      "Bahçeşehir Üniversitesi Hukuk Fakültesi, İstanbul\nAmerikan Hukuku Sertifika Programı (2011)",
-      "Yeditepe Üniversitesi Hukuk Fakültesi, İstanbul\nHukuk Lisans Programı – LL.B. (2011)"
+      "Fordham Üniversitesi Hukuk Fakültesi, New York, ABD\nLL.M. – Bankacılık, Şirketler ve Finans Hukuku",
+      "Bahçeşehir Üniversitesi Amerikan Hukuku Sertifika Programı, İstanbul\nAmerikan Hukuku ve Karşılaştırmalı Dava Sistemleri",
+      "Yeditepe Üniversitesi Hukuk Fakültesi, İstanbul\nHukuk Lisans Programı – LL.B."
+    ],
+    biography: [
+      "Av. Gerçek Onur Oy, Fordham Üniversitesi Hukuk Fakültesi’nde Bankacılık, Şirketler ve Finans Hukuku alanında yüksek lisans (LL.M.) derecesine sahiptir. Lisans eğitimini Yeditepe Üniversitesi Hukuk Fakültesi’nde tamamladıktan sonra Bahçeşehir Üniversitesi Amerikan Hukuku Sertifika Programı kapsamında Amerikan Hukuku ve Karşılaştırmalı Dava Sistemleri alanlarında uzmanlık çalışmaları yapmıştır.",
+      "New York’ta eğitim gördüğü süre boyunca ADA Business Strategies LLC bünyesinde, ABD’de yatırım yapmak isteyen kişi ve kuruluşlara Amerikan Göçmenlik Kanunları çerçevesinde sektör araştırması ve iş planı hazırlama hizmetleri sağlamıştır. Ayrıca finans sektörünün merkezi “Wall Street” bölgesinde faaliyet gösteren MAP Trading LLC’de finansal veri analisti olarak görev yapmıştır.",
+      "Aile hukuku, miras hukuku, kira ve taşınmaz hukuku, şirketler hukuku, bankacılık hukuku, kat mülkiyeti hukuku ve kentsel dönüşüm alanlarında yayımlanmış kitap çalışmaları bulunan Gerçek Onur Oy, akademik birikimini pratiğe aktarıp müvekkillerine kapsamlı ve güvenilir hukuki danışmanlık sunmaktadır. Türkçe ve İngilizce dillerindeki yetkinliği sayesinde ulusal ve uluslararası düzeyde etkin hukuk hizmeti vermektedir."
     ],
     image: "/onur.png",
     email: "gercek.oy@hcc.av.tr",
@@ -545,7 +548,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "Miras Hukuku",
       "İcra ve İflas Hukuku"
     ],
-    education: "Türk-Alman Üniversitesi Hukuk Fakültesi",
+    education: "Türk-Alman Üniversitesi Hukuk Fakültesi, İstanbul",
     languages: ["Türkçe", "Almanca", "İngilizce"],
     image: "/batuhan.png",
     email: "batuhan.celik@hcc.av.tr",
@@ -561,7 +564,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "İş Hukuku",
       "Rekabet Hukuku"
     ],
-    education: "Mef Üniversitesi Hukuk Fakültesi",
+    education: "MEF Üniversitesi Hukuk Fakültesi, İstanbul",
     languages: ["Türkçe", "İngilizce"],
     image: "/zumra.png",
     email: "zumra.feyzi@hcc.av.tr",
@@ -709,7 +712,6 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       disclaimer:
         "Bu web sitesinde yer alan bilgiler yalnızca bilgilendirme amaçlıdır ve hukuki danışmanlık niteliği taşımaz.",
       socialSoonLinkedIn: "LinkedIn",
-      socialSoonX: "X bağlantısı eklenecek",
     },
     pages: {
       aboutIntro:
@@ -931,7 +933,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "Advises individual and corporate clients with a strategic, meticulous and solutions-focused approach across a broad range of legal matters.",
           longDescription:
             "Hasan Can Cebeci approaches legal matters with careful analysis, commercial awareness and a strong focus on practical outcomes, providing representation and advisory support tailored to the needs of both individual and corporate clients.",
-          education: "Yeditepe University Faculty of Law",
+          education: "Yeditepe University Faculty of Law, Istanbul",
           biography: [
             "As the founding and managing attorney of HCC Law Office, he provides legal advisory services, dispute strategy and litigation follow-up for individual and corporate clients, drawing on many years of professional experience. His practice is primarily focused on dispute resolution, litigation strategy and process management.",
             "His areas of work include commercial disputes, inter-company conflicts, litigation arising from construction and work contracts, commitment relationships, receivables and liability claims, and the management of concordat and bankruptcy proceedings. In particular, he focuses on establishing the right legal position from the outset in complex, high-risk and multi-party matters.",
@@ -949,18 +951,18 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "Applies a structured and forward-looking approach to identifying legal risk and safeguarding client interests at every stage of a matter.",
           longDescription:
             "Osman Oy focuses on risk assessment and preventive legal strategy, helping clients manage legal processes in a disciplined, organised and commercially conscious manner.",
-          education: "İstanbul Üniversitesi Hukuk Fakültesi",
+          education: "Istanbul Faculty of Law, Istanbul",
           biography: [
-            "1950 yılında Erzurum'da doğmuşum. İskenderun Namık Kemal İlkokulu, Bakırköy Taş Mektep ve Pertevniyal Lisesi’nden ikincilik ile mezuniyet sonrası İstanbul Üniversitesi Hukuk Fakültesi'nde eğitimimi iyi derece ile tamamladıktan sonra, çalışma hayatına 1974 yılında avukatlık ile başladım.",
-            "Daha sonra özellikle finans sektörüne duyduğum ilgi neticesi; Akbank’ın açtığı Müfettişlik sınavını kazanarak Banka Müfettişi oldum. Akbank’ta 10 yıl Müfettişlik sonrası gelen transfer teklifi üzerine eski adı ''Selanik Bankası'' olan ''Uluslararası Endüstri ve Ticaret Bankası''na Yönetmen unvanı ile işe başlayarak bu süreçte birçok büyük sorunlu kredi olayını oluşturduğum projelerle hem firmalar hem de banka açısından çözüme bağladım.",
-            "Kısa bir süre sonra aynı bankada Hukuk Müşavirliği de uhdemde kalmak suretiyle Muhasebe, Mali Planlama, Mali Kontrol, Sorunlu Krediler, İştirak Kredileri, Kredi Kontrol, Banka İştirakleri, Banka Gayrimenkullerinin Yönetimi kapsamlı olarak Genel Müdür Yardımcılığına terfi ettim ve bundan sonraki bankacılık hayatımda bankalarda Murahhas Üye Olarak Genel Müdürlük, Yönetim Kurulu Üyelikleri ve reel sektörde de Holding Genel Koordinatörlüğünün yanı sıra, medya, inşaat, sigorta, teknoloji ve ticaret gibi sektörlerde faaliyet gösteren çeşitli şirketlerde aktif Yönetim Kurulu Üyelikleri yaptım. 2000 yılı başından itibaren de serbest avukatlık hayatıma döndüm...",
-            "Yaş kemale erince de danışmanlığın yanı sıra ve Akbank Müfettişliğinden beri yaptığım kitap çalışmalarına yoğunluk vermek suretiyle, an itibariyle herbirinin yayınlanmasında aynı heyecanı hissettiğim üzere sıralamak gerekir ise; ''Yorumsuz (Atatürk’ün Yaşam Hikayesi), Bankacılar İçin Hukuk, Bankacılar İçin Teminat Mektubu, Bankacılar İçin İpotek, (4389) Sayılı Bankalar Kanunu, Kredi Teminatları ve Kredi Suçları, Banka Yönetim Kurulu Üyelerinin Hukuki ve Cezai Sorumlulukları, Bankacılıkta Kredi Ve Kredi Teminatları, Boşanma, Boşanmanın Hukuki Neticeleri, İflas, Konkordato, İflas Ertelemesi, Vatandaşlık El Kitabı, İhtiyati Haciz, Toplu Yapı-Apartman-Plaza Yönetimi, Çek, Finansal Kiralama, Faktoring Franchising, Malvarlığının Terkinini Suretiyle Konkordato, Konut Finansmam Sistemi: Mortgage, Kentsel Dönüşüm, Kat Karşılığı İnşaat Sözleşmeleri, Uzlaşma Yoluyla Yeniden Yapılanma, Varlık Yönetim Şirketleri, Gayrimenkul Yatırım Ortaklıkları, Tahliye Davaları, Leasing Alacaklarının Takibi, Karı-Kocanın Edinilmiş Mallara Katılma Ve Miras Hukuku Hakları, Varlık Yönetim Şirketleri, Hasta Hakları Ve Başvuru Yolları, Kiraya Veren-Kiracı İlişkileri, Yeni Düzenleme Tahtında Konkordato, Anonim Şirketler, Avukatın Öz-El Kitabı (Avukatlık Rehberi), Kat Mülkiyeti Ve Apartman-Site-Toplu Yapı Yönetimi El Kitabı, Ödeme Güçlüğü İçine Giren Firmaların Finansal Borçlarının Yapılandırılması, (5411) Sayılı Bankacılık Kanunu Sistematiği, Boşanma Davaları El Kitabı, Edinilmiş Mallara Katılma Rejiminin Tasfiyesi (El Kitabı), Kentsel Dönüşüm, Avukatın Öz-El Kitabı (Aile Davaları Rehberi), Gazi Mustafa Kemal Atatürk, Avukatın Öz-El Kitabı (Kira Davaları), Kat Karşılığı İnşaat Sözleşmeleri (El Kitabı), Konaklama Tesisleri Ve Otel Yönetimi, Kira El Kitabı, Firmaların Mali Krizden Çıkış Yolları: Konkordato Ve Reel Sektörün Finansman Sektörüne Olan Borçlarının Yapılandırılması, (6502) Sayılı Tüketicinin Korunması Hakkında Kanun Şerhi, Efendiler, Gazi Mustafa Kemal Atatürk’ün Tarihe Işık, Bugün Ve Geleceğe Yön Veren Konuşmaları, Anonim Şirketler'' başlıklı 53 kitap çalışmasına imza attım.",
-            "Şimdilerde de ''Hukuk, Finans ve Gayrimenkul Danışmanlığı'' nın yanı sıra ''Kitap Çalışmaları''na da devam etmekteyim.",
+            "I was born in Erzurum in 1950. After completing my primary education at Iskenderun Namık Kemal Primary School and Bakırkoy Tas Mektep, and graduating from Pertevniyal High School as the second-ranking student of my class, I went on to study at Istanbul University Faculty of Law, where I completed my legal education with good standing. I began my professional career as an attorney in 1974.",
+            "Subsequently, as a result of my particular interest in the finance sector, I passed Akbank’s Inspectorate Examination and became a Bank Inspector. After serving as an Inspector at Akbank for 10 years, I accepted a transfer offer and joined the former “Selanik Bank” later known as “International Industrial and Commercial Bank” with the title of Manager. During this period, I resolved numerous major problematic credit cases through projects I personally developed, achieving solutions both for the companies involved and for the bank.",
+            "Shortly thereafter, while also retaining responsibility for the Legal Consultancy Department at the same bank, I was promoted to Assistant General Manager, with comprehensive responsibility for Accounting, Financial Planning, Financial Control, Problem Loans, Subsidiary Loans, Credit Control, Bank Subsidiaries, and the Management of Bank Real Estate. In the subsequent course of my banking career, I served as Managing Director and General Manager, Board Member at various banks, and, in the real sector, as Holding General Coordinator, in addition to holding active Board Memberships in various companies operating in sectors such as media, construction, insurance, technology, and trade. As of the beginning of the year 2000, I returned to private legal practice.",
+            "Having reached a mature stage in life, I have continued my consultancy work while also devoting greater attention to the book projects I had been working on since my years as an Akbank Inspector. As of today, each publication still gives me the same sense of excitement. In chronological order, I have authored 53 books, including:",
+            "“Without Commentary: The Life Story of Atatürk,” “Law for Bankers,” “Letters of Guarantee for Bankers,” “Mortgages for Bankers,” “Banking Law No. 4389,” “Credit Collaterals and Credit Crimes,” “The Civil and Criminal Liabilities of Bank Board Members,” “Credit and Credit Collaterals in Banking,” “Divorce,” “The Legal Consequences of Divorce,” “Bankruptcy,” “Concordat and Postponement of Bankruptcy,” “Citizenship Handbook,” “Provisional Attachment,” “Collective Housing–Apartment–Plaza Management,” “Checks,” “Financial Leasing, Factoring and Franchising,” “Concordat by Liquidation of Assets,” “Housing Finance System: Mortgage,” “Urban Transformation,” “Construction Agreements in Return for Land Share,” “Restructuring Through Settlement,” “Asset Management Companies,” “Real Estate Investment Trusts,” “Eviction Lawsuits,” “Enforcement of Leasing Receivables,” “The Rights of Husband and Wife under the Regime of Participation in Acquired Property and Inheritance Law,” “Asset Management Companies,” “Patients’ Rights and Legal Remedies,” “Landlord–Tenant Relations,” “Concordat under the New Regulation,” “Joint Stock Companies,” “The Lawyer’s Essential Handbook: Attorney’s Guide,” “Property Ownership and Apartment–Site–Collective Housing Management Handbook,” “Financial Restructuring of Companies in Financial Distress,” “The Systematics of Banking Law No. 5411,” “Divorce Cases Handbook,” “Liquidation of the Regime of Participation in Acquired Property: Handbook,” “Urban Transformation,” “The Lawyer’s Essential Handbook: Family Law Cases Guide,” “Gazi Mustafa Kemal Atatürk,” “The Lawyer’s Essential Handbook: Lease Cases,” “Construction Agreements in Return for Land Share: Handbook,” “Accommodation Facilities and Hotel Management,” “Lease Handbook,” “Ways for Companies to Overcome Financial Crisis: Concordat and Restructuring of the Real Sector’s Debts to the Finance Sector,” “Commentary on Consumer Protection Law No. 6502,” “Gentlemen,” “Gazi Mustafa Kemal Atatürk’s Speeches That Shed Light on History and Shape the Present and the Future,” and “Joint Stock Companies.”",
+            "At present, I continue to provide consultancy services in the fields of Law, Finance, and Real Estate, while also pursuing my ongoing book projects.",
           ],
           expertise: ["Risk Assessment", "Preventive Law"],
-          email: "",
+          email: "osman.oy@hcc.av.tr",
           officePhone: "0212 216 07 24",
-          startYear: "1974",
         },
         {
           name: "Gerçek Onur Oy",
@@ -971,9 +973,14 @@ export const siteContent: Record<Locale, SiteDictionary> = {
           longDescription:
             "Gerçek Onur Oy supports clients with a measured and analytical approach to disputes, combining thorough legal review with clear guidance throughout negotiation, litigation and related proceedings.",
           education: [
-            "Fordham University School of Law, New York, ABD\nLL.M. – Bankacılık, Ticaret ve Finans Hukuku (2015)",
-            "Bahçeşehir Üniversitesi Hukuk Fakültesi, İstanbul\nAmerikan Hukuku Sertifika Programı (2011)",
-            "Yeditepe Üniversitesi Hukuk Fakültesi, İstanbul\nHukuk Lisans Programı – LL.B. (2011)",
+            "Fordham University School of Law, New York, U.S.\nLL.M. – Banking, Corporate and Finance Law",
+            "Yeditepe University Faculty of Law, Istanbul\nBachelor of Laws Program – LL.B.",
+            "Bahçeşehir University American Law Certificate Program, Istanbul\nAmerican Law and Comparative Litigation Systems",
+          ],
+          biography: [
+            "Gerçek Onur Oy holds an LL.M. degree in Banking, Corporate and Finance Law from Fordham University School of Law. After completing his undergraduate legal education at Yeditepe University Faculty of Law, he pursued further studies in American Law and Comparative Litigation Systems through the Bahçeşehir University American Law Certificate Program.",
+            "During his studies in New York, he provided sector research and business plan preparation support at ADA Business Strategies LLC for individuals and entities seeking to invest in the U.S. He also worked as a financial data analyst at MAP Trading LLC, located in the Wall Street financial district.",
+            "With published book projects in family law, inheritance law, lease and real estate law, corporate law, banking law, condominium law and urban transformation, Gerçek Onur Oy combines his academic background with practical legal experience. His command of Turkish and English enables him to provide effective legal services to clients at both national and international levels.",
           ],
           expertise: ["Dispute Resolution", "Legal Assessment"],
           email: "gercek.oy@hcc.av.tr",
@@ -987,7 +994,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "Supports the team through legal research, document review and the careful preparation of case and advisory files.",
           longDescription:
             "M. Batuhan Çelik contributes to the office through disciplined legal research, attentive file preparation and reliable support across day-to-day legal and operational workflows.",
-          education: "Türk-Alman Üniversitesi Hukuk Fakültesi",
+          education: "Turkish-German University Faculty of Law, Istanbul",
           languages: ["Türkçe", "Almanca", "İngilizce"],
           expertise: ["Legal Research", "File Preparation"],
           email: "batuhan.celik@hcc.av.tr",
@@ -1001,7 +1008,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "Provides support in documentation, legal review and the organisation of internal legal processes.",
           longDescription:
             "Zümra Miray Feyzi supports the office with a careful and organised working style, contributing to documentation, legal review and the smooth coordination of internal processes.",
-          education: "Mef Üniversitesi Hukuk Fakültesi",
+          education: "MEF University Faculty of Law, Istanbul",
           languages: ["Türkçe", "İngilizce"],
           expertise: ["Documentation", "Legal Review"],
           email: "zumra.feyzi@hcc.av.tr",
@@ -1149,7 +1156,6 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       disclaimer:
         "The information provided on this website is for general information purposes only and does not constitute legal advice.",
       socialSoonLinkedIn: "LinkedIn",
-      socialSoonX: "X link will be added",
     },
     pages: {
       aboutIntro:

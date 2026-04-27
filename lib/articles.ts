@@ -267,13 +267,13 @@ const articleRecords: ArticleRecord[] = [
         sections: [
           {
             heading:
-              "1. Fesih Hakkının Kötüye Kullanılması",
-            subheading:
               "I. İşverenin Fesih Hakkını Kötüye Kullanmasının Yaptırımı Olarak Kötüniyet Tazminatı",
+            subheading:
+              "1. Fesih Hakkının Kötüye Kullanılması",
             paragraphs: [],
           },
           {
-            heading: "a. Genel Olarak Hakkın Kötüye Kullanılması",
+            heading: "I.1. Genel Olarak Hakkın Kötüye Kullanılması",
             paragraphs: [
               "4721 sayılı Türk Medeni Kanunun dürüst davranma başlıklı 2. maddesinde dürüstlük kuralı ve hakkın kötüye kullanılması yasağı ilkleri yer almaktadır. İşbu maddenin 1. fıkrasında dürüstlük kuralı ilkesi “Herkes, haklarını kullanırken ve borçlarını yerine getirirken dürüstlük kurallarına uymak zorundadır.” şeklinde yer almaktadır. Maddenin 2. fıkrasında ise “Bir hakkın açıkça kötüye kullanılmasını hukuk düzeni korumaz” şeklinde hakkın kötüye kullanılması ilkesine yer verilmiştir.(1)",
               "Genel olarak amaç, hukuki netice doğuran insan davranışları ve sosyal ilişki içerisindeki bireylerin haklarını kullanırken veya borçlarını yerine getirirken namuslu, ahlaklı, dürüst ve yaptığı eylemin neticesini bilen orta zekalı bir insan gibi hareket etmeleri gerektiğini öngörmektedir.(2)",
@@ -288,7 +288,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "b. Kötüniyetli Feshe Örnek Teşkil Eden Durumlar",
+            heading: "I.2. Kötüniyetli Feshe Örnek Teşkil Eden Durumlar",
             paragraphs: [
               "Yasa’da hangi durumların kötüniyetli sayılacağı belirtilmemiştir. 1475 sayılı Yasa’da, işçinin şikayete başvurması veya sendikaya üye olması gibi nedenler ileri sürülerek iş akdinin işverence sonlandırılması kötüniyetin varlığı bakımından örnek olarak gösterilmesine rağmen, 4857 sayılı Kanun’da fesih hakkının kötüye kullanılmasında örneksenme yapılmamıştır. Kötüniyetli fesihlerde, her somut olayın kendi içinde değerlendirilmesinde fayda bulunmaktadır. En yaygın haliyle işçinin sendika üyesi olması, işvereni şikayet etmesi, Yasa’dan doğan hakkını talep etmesi, özel yaşamı gibi durumlar sebebiyle iş akdinin işverence kötüniyetli feshedilmesi karşımıza çıkmaktadır.",
               "Yargıtay tarafından bir olayda işçinin, işverenini SSK’ya şikayet etmesi sonucunda iş akdinin feshedilmesini kötüniyetli olarak kabul etmiş ve işveren aleyhine kötüniyet tazminatına hükmedilmesi gerektiğinden Mahkeme’nin kararını bozmuştur.(11)",
@@ -298,9 +298,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "2. İşçinin Kötüniyet Tazminatına Hak Kazanmasının Koşulları",
-            subheading:
-              "I. İşverenin Fesih Hakkını Kötüye Kullanmasının Yaptırımı Olarak Kötüniyet Tazminatı",
+            heading: "I.3. İşçinin Kötüniyet Tazminatına Hak Kazanmasının Koşulları",
             paragraphs: [
               "Kötüniyet tazminatının düzenlendiği 17. maddeye göre, iş güvencesinden yararlanamayan ve belirsiz süreli iş sözleşmeleri olan işçiler, kötüniyet tazminatı talebinde bulunabilmektedirler. Belirli süreli iş sözleşmelerinde, süreli fesih olmadığından, belirlenen süreden evvel sözleşmenin işveren tarafından kötüniyetli olarak sonlandırılması halinde, haksız fesihten söz edilebilmektedir. Başka bir ifadeyle haksız fesihte, doğmamış olan fesih hakkının kullanılması; fesih hakkının kötüye kullanılmasındaysa doğmuş fesih hakkının objektif iyi niyet kurallarına aykırı kullanılması söz konusudur.(15) Bu haliyle, kötüniyet tazminatı, belirsiz süreli iş sözleşmelerinde talep edilebilmektedir.",
               "Yargıtay da kötüniyet tazminatını incelerken öncelikle işçinin iş güvencesi hükümlerinden yararlanıp yararlanamadığına bakmaktadır. Yargıtay vermiş olduğu bir kararında dosyadaki evraklardan işçinin iş güvencesinden yararlanıp yararlanamadığını anlayamadığından; Mahkeme’nin, “işçinin iş güvencesinden yararlanıp yararlanmadığı hususunu kesin olarak belirlemek ve iş güvencesine tabi işçilerden olduğunun anlaşılması halinde feshin kötüniyetli olduğu gerekçesi ile tazminat talep edemeyeceği gözetilerek bu talebin reddine, davacı işçinin iş güvencesinden yararlanmıyor olduğunun tespiti halinde ise önceki gibi karar verilmesi” şeklinde hüküm kurmuştur.(16) Yargıtayın bu kararından da anlaşılacağı üzere, işçinin kötüniyet tazminatını talep edebilmesi için öncelikle işçinin, iş güvencesi hükümlerinden yararlanamıyor olması gerekmektedir.",
@@ -308,9 +306,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "3. İspat Yükü",
-            subheading:
-              "I. İşverenin Fesih Hakkını Kötüye Kullanmasının Yaptırımı Olarak Kötüniyet Tazminatı",
+            heading: "I.4. İspat Yükü",
             paragraphs: [
               "İş güvencesi kapsamında bulunmayan işçiler, kötüniyet tazminatından yararlanmaktadırlar. İş sözleşmesinin kötüniyetli feshedildiğini iddia eden işçi, iddiasını ispat etmek zorundadır. İspat yükünün işçide olmasının sebebi Türk Medeni Kanunu 3. maddesinden kaynaklanmaktadır. İlgili maddede, Türk Medeni Kanunu iyi niyete hukuki bir sonuç bağladığı durumlarda, esas olan iyi niyetin varlığı olduğu belirtilmektedir. Yasa, taraflarda iyi niyetin varlığını kabul ettiği için, iş akdinin feshinde süreli fesih bildirim hakkını kullanan işverenin, iyi niyetli olduğu kabul edilmekle birlikte aksinin ispatlanması işçiden talep edilecektir.(17)",
               "Yargıtay Hukuk Genel Kurulu vermiş olduğu bir kararda; işveren tarafından iş sözleşmesinin kötüniyetli olarak feshedildiğini, “örneğin işvereni hakkında şikayet yoluna başvurduğu ya da aleyhine tanıklık yaptığı için, işten bu nedenle çıkarıldığını iddia eden işçinin, bu iddiasını ispat etmesi gerekir” yönünde değerlendirmede bulunmuştur. Kararın devamında ise bu hususun Türk Medeni Kanunu’nun 3. maddesinin birinci fıkrasındaki \" Kanunun iyi niyete hukukî bir sonuç bağladığı durumlarda, asıl olan iyi niyetin varlığıdır.\" hükmünün bir sonucu olduğu görüşüyle, işverence kötüniyetle işten çıkarıldığını ileri süren işçinin, işverenin kötüniyetini ispat etmek durumunda olduğuna karar vermiştir. Kararın devamında ise davada dinlenen işçinin tanıklarının, feshin kötüniyetli yapılıp yapılmadığı konusunda yeterli bilgilerinin olmadığı; feshe ilişkin bilgi veya beyanlarının olmadığı sonucuna varılmıştır. Yargıtayın bu değerlendirmesinden, kötüniyetli olarak iş akdinin sonlandırılmasına dair tanıklık yapacak kimselerin, bu olaya tanıklık etmiş olmaları üzerinde durulmuştur.(18)",
@@ -321,9 +317,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "4. Zamanaşımı Ve Faiz",
-            subheading:
-              "I. İşverenin Fesih Hakkını Kötüye Kullanmasının Yaptırımı Olarak Kötüniyet Tazminatı",
+            heading: "I.5. Zamanaşımı ve Faiz",
             paragraphs: [
               "Yasa koyucu tarafından 12.10.2017 tarihinde yapılan düzenleme ile, kötüniyet tazminatının zamanaşımı süresi, İş Kanunu’na eklenen ek 3. maddesi uyarınca beş yıl olarak kararlaştırılmıştır.",
               "Kötüniyet tazminatının süresinde ödenmemesi halinde uygulanacak faiz hususunda Yasa’da düzenleme bulunmamaktadır. İşveren temerrüde düşürülmemiş ise dava tarihinden itibaren yasal faiz yürütülmektedir. Şayet işveren ihtarname çekilerek temerrüde düşürülmüş ise, o zaman ihtarnamedeki sürenin bitim tarihinin sonraki gününden başlamak üzere yasal faiz yürütülebilir.",
@@ -331,7 +325,7 @@ const articleRecords: ArticleRecord[] = [
           },
           {
             heading:
-              "1. Bildirim Süresinde Hak Kazanılan Ücretin Üç Katı Tutarında Olması",
+              "II.1. Bildirim Süresinde Hak Kazanılan Ücretin Üç Katı Tutarında Olması",
             subheading: "II. Kötüniyet Tazminatının Hesaplanması",
             paragraphs: [
               "İş Kanunu’nun 17. maddesin 6. fıkrasındaki düzenlemeye göre, iş akdinin feshini kötüniyetli kullanan işveren, bildirim süresindeki ücretin üç katı tutarında kötüniyet tazminatı ödemek durumundadır.",
@@ -345,7 +339,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "2. Bildirim Önellerinin Arttırılması Halinde Kötüniyet Tazminatı",
+            heading: "II.2. Bildirim Önellerinin Arttırılması Halinde Kötüniyet Tazminatı",
             subheading: "II. Kötüniyet Tazminatının Hesaplanması",
             paragraphs: [
               "İşveren ile işçi arasındaki sözleşmeler veya toplu iş sözleşmeleri ile, İş Kanunu 17. maddesinde belirtilen bildirim süreleri arttırılabilmektedir. Kötüniyet tazminatı hesaplanırken, Yasa’da bildirim süresindeki ücretin üç katı tutarında arttırılacağına dair ibare olduğu için, taraflar arasında kararlaştırılan sürenin mi yoksa Yasa’da yer alan sürenin mi esas alınacağı konusunda Yargıtay ve öğretideki görüşler farklılık göstermektedir.",
@@ -354,7 +348,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "1. Kötüniyet Tazminatı ve Sendikal Tazminat",
+            heading: "III.1. Kötüniyet Tazminatı ve Sendikal Tazminat",
             subheading: "III. Kötüniyet Tazminatının Diğer Tazminatlarla İlişkisi",
             paragraphs: [
               "İşveren tarafından, iş sözleşmesini fesih hakkının kötüye kullanılmasını sağlayan sebeplerden bir tanesi, işçinin sendikal faaliyetleridir.(29) Sendikalar ve Toplu İş Sözleşmeleri Kanunu’nun 25. maddesi 2. fıkrasına göre işveren, sendikal faaliyetlerde bulunan işçiler ile diğer işçiler arasında ayrımcılık yapılamayacağını belirtmektedir. Yine aynı maddenin 3. fıkrasında işverenin, işçinin bir sendikaya üye olması, sendikal faaliyetlerde bulunması v.b. hallerde bulunması durumunda işten çıkartılamayacağından dolayı, işverenin aksi davranışı hakkın kötüye kullanılması olarak yorumlanmaktadır. Sendikal bir nedenle iş sözleşmesinin feshi halinde işçi, dava açma hakkına sahiptir. İlgili maddedeki sebeplere aykırılık halinde, işçinin bir yıllık ücret tutarından az olmamak üzere sendikal tazminata hükmedilir. İşçi herhangi bir zarara uğramasa dahi, sendikal tazminata hak kazanmaktadır.",
@@ -364,7 +358,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "2. Kötüniyet Tazminatı ve Ayrımcılık Tazminatı",
+            heading: "III.2. Kötüniyet Tazminatı ve Ayrımcılık Tazminatı",
             subheading: "III. Kötüniyet Tazminatının Diğer Tazminatlarla İlişkisi",
             paragraphs: [
               "Ayrımcılık tazminatı, işveren tarafından eşit davranma borcunun ihlali sonucunda, işçiye ödenen bir tazminat çeşididir. İşveren, İş Kanunu 5. maddesinde belirtilen eşit davranma yükümlülüğünü yerine getirmediği hallerde, ilgi maddenin 6. fıkrası gereği tazminata mahkum edilmektedir. Aynı fıkranın devamında ise, 2821 sayılı Sendikalar Kanunu 31. maddesi (Sendikalar ve Toplu İş Sözleşmeleri Kanunu’nun 25. maddesi) saklı tutulmuştur. Buradan hareketle, sendikal tazminat ile ayrımcılık tazminatının aynı anda talep edilemeyeceği sonucuna varılmaktadır.",
@@ -380,7 +374,7 @@ const articleRecords: ArticleRecord[] = [
           },
           {
             heading:
-              "3. Kötüniyet Tazminatı ile İhbar Tazminatı ve Kıdem Tazminatı İlişkisi",
+              "III.3. Kötüniyet Tazminatı ile İhbar Tazminatı ve Kıdem Tazminatı İlişkisi",
             subheading: "III. Kötüniyet Tazminatının Diğer Tazminatlarla İlişkisi",
             paragraphs: [
               "İşçinin iş sözleşmesi, İş Kanunu 25. maddesi 2. bendinde yer alan ahlak ve iyi niyet kurallarına uymayan davranışlar haricinde feshedilmişse ve işçi işyerinde bir seneden fazla çalışmış ise kıdem tazminatına hak kazanmaktadır. Bu haliyle iş akdi kötüniyetle feshedilen işçi, kıdem tazminatına hak kazanmaktadır.",
@@ -391,7 +385,7 @@ const articleRecords: ArticleRecord[] = [
           },
           {
             heading:
-              "4. Kötüniyet Tazminatı ile Maddi ve Manevi Tazminat İlişkisi",
+              "III.4. Kötüniyet Tazminatı ile Maddi ve Manevi Tazminat İlişkisi",
             subheading: "III. Kötüniyet Tazminatının Diğer Tazminatlarla İlişkisi",
             paragraphs: [
               "İş Kanunu’nda, iş akdinin usulsüz feshedilmesi sebebiyle işçinin hak kazanacağı tazminatların, zararını karşılamaması durumunda, oluşan zararını tazmin edebilmek için herhangi bir düzenleme bulunmamaktadır. Bu sebeple, işçinin hak kazandığı tazminat tutarının zararını karşılamaması halinde, tazminat talebini genel hükümlere göre yapması yerinde olacaktır.",
@@ -539,7 +533,7 @@ const articleRecords: ArticleRecord[] = [
           "Çoğu insanın hayalleri arasında kendine ait bir evinin olması vardır. Günümüz ekonomik koşullarında ise bireylerin para biriktirmek suretiyle konut sahibi olabilmeleri çok uzun yıllarını almaktadır. Toplum arasında “sat-yap” veya “maketten satış” olarak tabir edilen ve genelde henüz ortada olmayan çok katlı yapılar, inşaat firmaları tarafından henüz inşasına başlanmadan veya inşası sırasında satışa çıkartılarak, satıcılara finansman olanağı sağlamakla birlikte, tüketici yönünden ise fiyat sabitlemesi ve inşaatı tamamlanmış bir yapıya göre daha makul fiyat avantajı olduğundan sıklıkla tercih edilmektedir.\n\nGüçlü inşaat firmaları karşısında tüketiciler, çeşitli zamanlarda işletmede yaşanan sorunlar veya su istimal sebebiyle mağduriyetler yaşamışlardır. Tüketicilerin yaşamış olduğu bu mağduriyetleri azaltmak için Tüketicinin Korunması Hakkında Kanun’da ön ödemeli konut satışı düzenlenmiştir. Genelde inşaat firmalarının bireylerin konut sahibi olma arzularını su istimal etmemeleri için Yasa’da tüketiciyi korumaya yönelik bir takım düzenlemelere yer verilmiştir. Ön ödemeli konut satış sözleşmeleri için şekil zorunluluğunun getirilmesi de Yasa’da yer alan düzenlemelerden bir tanesidir.",
         sections: [
           {
-            heading: "1. Tanımı ve Kapsamı",
+            heading: "I.1. Tanımı ve Kapsamı",
             subheading: "I. Ön Ödemeli Konut Satış Sözleşmesi",
             paragraphs: [
               "Halk arasında “maketten satış veya sat-yap” olarak da isimlendirilen ve genellikle inşasına henüz başlanmamış konutlar için, tüketicinin ön ödemeli konut satış sözleşmesi ile ödeme yapmaya başlaması sebebiyle özel bir korumayı gerektirdiğinden, 6502 sayılı Tüketicinin Korunması Hakkında Kanun’da özel olarak düzenlenmiştir.(1) 6502 sayılı Kanunun 40. maddesinin 1. fıkrasında “Ön ödemeli konut satış sözleşmesi, tüketicinin konut amaçlı bir taşınmazın satış bedelini önceden peşin veya taksitle ödemeyi, satıcının da bedelin tamamen veya kısmen ödenmesinden sonra taşınmazı tüketiciye devir veya teslim etmeyi üstlendiği sözleşmedir” olarak tanımlanmıştır.",
@@ -550,7 +544,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "2. Unsurları",
+            heading: "I.2. Unsurları",
             subheading: "I. Ön Ödemeli Konut Satış Sözleşmesi",
             paragraphs: [
               "Ön ödemeli konut satış sözleşmesinin tanımı 6502 sayılı Kanunun 40. maddesinin 1. fıkrasında ve aynı zaman da Ön Ödemeli Konut Satışları Hakkında Yönetmeliği 4/1-ğ maddesinde yapılmaktadır. 6502 sayılı Kanunun 2. maddesine göre, Yasa kapsamına giren akitlerin tüketici sözleşmesi niteliğinde olması gerekmektedir. Aynı Kanunun 3/1/l maddesine göre de sözleşmenin tüketici işlemi olabilmesi için kamu tüzel kişileri de dâhil olmak üzere ticari veya mesleki amaçlarla hareket eden veya onun adına ya da hesabına hareket eden gerçek veya tüzel kişiler ile tüketiciler arasında kurulan sözleşme olması kafidir.",
@@ -561,7 +555,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "3. Hukuki Niteliği ve Zorunlu İçeriği",
+            heading: "I.3. Hukuki Niteliği ve Zorunlu İçeriği",
             subheading: "I. Ön Ödemeli Konut Satış Sözleşmesi",
             paragraphs: [
               "Ön ödemeli konut satış sözleşmesinde satıcı, konutun mülkiyetinin tüketiciye devretme borcu altındayken tüketici ise taşınmazın bedelini ödeme borcu altındadır. Bu haliyle borçlanma işlemi niteliği taşımaktadır.(6) Taraflar, aralarındaki sözleşme ile karşılıklı olarak edimlerini ifa borcu altına girdiklerinden tam iki tarafa borç yükleyen bir sözleşmedir.",
@@ -573,7 +567,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "1. Genel Olarak Şekil",
+            heading: "II.1. Genel Olarak Şekil",
             subheading: "II. Ön Ödemeli Konut Satış Sözleşmesinde Şekil",
             paragraphs: [
               "Türk özel hukukunda sözleşme özgürlüğü temel ilkelerden biri olup şekil serbestisi prensibi geçerlidir. Taşınmaz satışı ile alakalı düzenlemeler Türk Medeni Kanunu 706. maddesi 1. fıkrası ve Türk Borçlar Kanunu 237. maddesinde yer almaktadır. İlgili yasa maddeleri gereği taşınmaz mülkiyetinin devrini içeren sözleşmeler resmi şekilde yapılmadıkça kesin hükümsüz olduğu kabul edilmektedir. Bu haliyle, taşınmaz mülkiyetinin devrini amaçlayan sözleşmeler tapu müdürlükleri dışında yapılması durumunda herhangi bir sonuç doğurmamaktadır. Çünkü taşınmaz devri ile alakalı sözleşmeleri düzenleme yetkisi ancak tapu sicil müdürlüğü ile tapu sicil görevlilerine aittir.(11)",
@@ -586,7 +580,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "2. Sözleşmenin Taşınmaz Satışı Şeklinde Yapılması",
+            heading: "II.2. Sözleşmenin Taşınmaz Satışı Şeklinde Yapılması",
             subheading: "II. Ön Ödemeli Konut Satış Sözleşmesinde Şekil",
             paragraphs: [
               "Tüketicinin Korunması Hakkında Kanun 41. maddesinde ön ödemeli konut satışının tapu siciline tescil edilmesinin zorunlu olduğu yönünde hüküm bulunmaktadır. Ancak satışın tapu siciline tescili ile amaçlanan usulün hangi şekil olduğu maddede açık değildir.",
@@ -607,7 +601,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "3. Sözleşmenin Satış Vaadi Şeklinde Yapılması",
+            heading: "II.3. Sözleşmenin Satış Vaadi Şeklinde Yapılması",
             subheading: "II. Ön Ödemeli Konut Satış Sözleşmesinde Şekil",
             paragraphs: [
               "Ön ödemeli konut satış sözleşmesinin diğer resmi şekil türü, taşınmaz satış vaadi şeklinde yapılmasıdır. Tüketicinin Korunması Hakkında Kanun 41. maddesi 1. fıkrasında ve Ön Ödemeli Konut Satışları Hakkında Yönetmeliği 6. maddesinde yer alan haliyle, sözleşme noterde düzenleme şeklinde kurulabileceği belirtilmektedir. Uygulamada çoğu zaman karşımıza çıkan satış şekli noterde düzenleme yoluyla yapılan ön ödemeli konut satış vaadi sözleşmesidir. Bu sözleşmeyle satıcı, henüz sözleşmenin başında tüketiciye mülkiyeti devretmemektedir.",
@@ -938,7 +932,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "1. Tasarrufun İptali Davaları",
+            heading: "II.1. Tasarrufun İptali Davaları",
             subheading: "II. Tasarrufun İptali Davalarında Zorunlu Arabuluculuk",
             paragraphs: [
               "Tasarrufun iptali davaları İcra ve İflas Kanunu’nun 277. ve 284. maddeleri arasında düzenlenmiştir. Yargıtayın yerleşik içtihatlarında tasarrufun iptali davası, borçlunun, alacaklısını zarara uğratma kastıyla, mal varlığından çıkarttığı mal ve hakların, zarar gören alacaklının alacağını elde etmek maksadıyla dava açarak tekrar borçlunun mal varlığına geçmesini sağlayan bir dava türü olarak tanımlanmıştır.(6) Bu davalarda, üçüncü kişi ile borçlu arasındaki tasarruf iptal edilerek alacaklıya, tasarrufa konu mal üzerinde, alacaklının alacağı nispetinde olmak kaydıyla cebri icra yetkisi verilmektedir.",
@@ -947,7 +941,7 @@ const articleRecords: ArticleRecord[] = [
             ],
           },
           {
-            heading: "2. Tasarrufun İptali Davaları ile Zorunlu Arabuluculuk Arasındaki İlişki",
+            heading: "II.2. Tasarrufun İptali Davaları ile Zorunlu Arabuluculuk Arasındaki İlişki",
             subheading: "II. Tasarrufun İptali Davalarında Zorunlu Arabuluculuk",
             paragraphs: [
               "İcra ve iflas hukukunda yalnızca alacaklı ve borçlunun çıkarları değil, çoğu zaman üçüncü kişilerin menfaatlerinin de çatıştığı görülmektedir. Üçüncü kişilerin hukuka aykırı yapmış olduğu işlemlerden olduğu alacaklının haklarının ihlal edilmesi neticesinde tüm tarafların menfaatlerinin eşit şekilde korunması gerekmektedir. Bu menfaat dengesinin korunması amacıyla, İcra ve İflas Kanunu’nda yer alan düzenlemelerden bir tanesi de tasarrufun iptali davalarıdır.",

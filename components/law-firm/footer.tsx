@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import {
   getDictionary,
   getLocaleFromPathname,
@@ -60,14 +60,6 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-
-              <span
-                className="text-background/60"
-                aria-label="X"
-                title={dictionary.footer.socialSoonX}
-              >
-                <Twitter className="h-5 w-5" />
-              </span>
             </div>
           </div>
 
