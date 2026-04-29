@@ -140,6 +140,7 @@ type TeamMember = {
   email?: string;
   officePhone?: string;
   mobilePhone?: string;
+  linkedinUrl?: string;
   education?: string | string[];
   languages?: string[];
   birthInfo?: string;
@@ -425,6 +426,11 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "KVKK uyum s\u00fcre\u00e7leri, veri i\u015fleme faaliyetlerinin de\u011ferlendirilmesi, ayd\u0131nlatma ve saklama politikalar\u0131 ile veri g\u00fcvenli\u011fine ili\u015fkin hukuki risk y\u00f6netimi sunuyoruz.",
         },
         {
+          title: "Ceza Hukuku",
+          description:
+            "Ceza soru\u015fturmalar\u0131 ve kovu\u015fturmalar\u0131nda, m\u00fcvekkillerin haklar\u0131n\u0131 koruyan, delil ve s\u00fcre\u00e7 y\u00f6netimini dikkatle ele alan hukuki temsil ve dan\u0131\u015fmanl\u0131k sunuyoruz.",
+        },
+        {
           title: "Mali ve Beyaz Yaka Su\u00e7lar\u0131",
           description:
             "Mali nitelikli su\u00e7lar, \u015firket y\u00f6neticilerine y\u00f6nelik soru\u015fturmalar ve beyaz yaka ceza dosyalar\u0131nda dikkatli, teknik ve itibari riskleri g\u00f6zeten savunma hizmeti veriyoruz.",
@@ -486,8 +492,10 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "Aile ve Miras Hukuku"
     ],
     image: "/hasan.png",
+    languages: ["Türkçe", "İngilizce"],
     email: "can.cebeci@hcc.av.tr",
-    officePhone: "0212 216 07 24"
+    officePhone: "0212 216 07 24",
+    linkedinUrl: "https://www.linkedin.com/in/hasan-can-cebeci-332664341/"
   },
   {
     name: "Osman Oy",
@@ -510,6 +518,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
     image: "/osmann.png",
     email: "osman.oy@hcc.av.tr",
     officePhone: "0212 216 07 24",
+    linkedinUrl: "https://www.linkedin.com/in/av-osman-oy-bbb90557/",
   },
   {
     name: "Gerçek Onur Oy",
@@ -534,14 +543,16 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       "Aile hukuku, miras hukuku, kira ve taşınmaz hukuku, şirketler hukuku, bankacılık hukuku, kat mülkiyeti hukuku ve kentsel dönüşüm alanlarında yayımlanmış kitap çalışmaları bulunan Gerçek Onur Oy, akademik birikimini pratiğe aktarıp müvekkillerine kapsamlı ve güvenilir hukuki danışmanlık sunmaktadır. Türkçe ve İngilizce dillerindeki yetkinliği sayesinde ulusal ve uluslararası düzeyde etkin hukuk hizmeti vermektedir."
     ],
     image: "/onur.png",
+    languages: ["Türkçe", "İngilizce"],
     email: "gercek.oy@hcc.av.tr",
-    officePhone: "0212 216 07 24"
+    officePhone: "0212 216 07 24",
+    linkedinUrl: "https://www.linkedin.com/in/gercekoy/"
   },
   {
     name: "M. Batuhan Çelik",
     role: "Stajyer Avukat",
     description: "Çeşitli özel hukuk alanlarında uyuşmazlık çözümü ve dava süreçlerinde çalışmalarını sürdürmektedir.",
-    longDescription: "Stajyer Avukat Muhammed Batuhan Çelik, ceza hukuku, aile hukuku ve icra-iflas hukuku başta olmak üzere çeşitli alanlarda çalışmalarına devam etmektedir.",
+    longDescription: "M. Batuhan Çelik, disiplinli hukuki araştırmaları, özenli dosya hazırlığı ve günlük hukuki operasyonel iş süreçlerinde sunduğu güvenilir destekle büroya katkı sağlamaktadır. Ayrıca, başta Ceza Hukuku, Aile Hukuku ve İcra ve İflas Hukuku olmak üzere hukukun çeşitli alanlarında çalışmalarına devam etmektedir.",
     expertise: [
       "Ceza Hukuku",
       "Aile Hukuku",
@@ -552,13 +563,14 @@ export const siteContent: Record<Locale, SiteDictionary> = {
     languages: ["Türkçe", "Almanca", "İngilizce"],
     image: "/batuhan.png",
     email: "batuhan.celik@hcc.av.tr",
-    officePhone: "0212 216 07 24"
+    officePhone: "0212 216 07 24",
+    linkedinUrl: "https://www.linkedin.com/in/batuhan-çelik-2907662b1/"
   },
   {
     name: "Zümra Miray Feyzi",
     role: "Stajyer Avukat",
     description: "Ticaret hukuku ve iş hukuku alanlarında dava takibi ve uyuşmazlık çözümüne yönelik çalışmalar yürütmektedir.",
-    longDescription: "Stajyer Avukat Zümra Miray Feyzi, ticaret ve şirketler hukuku ile iş hukuku alanlarında çalışmalarını sürdürmektedir.",
+    longDescription: "Zümra Miray Feyzi, dikkatli ve düzenli çalışma tarzıyla büroya destek olmakta; dokümantasyon, hukuki inceleme ve iç süreçlerin sorunsuz koordinasyonuna katkı sağlamaktadır. Ayrıca, Ticaret ve Şirketler Hukuku ile İş Hukuku alanlarında çalışmalarını sürdürmektedir.",
     expertise: [
       "Ticaret ve Şirketler Hukuku",
       "İş Hukuku",
@@ -568,7 +580,8 @@ export const siteContent: Record<Locale, SiteDictionary> = {
     languages: ["Türkçe", "İngilizce"],
     image: "/zumra.png",
     email: "zumra.feyzi@hcc.av.tr",
-    officePhone: "0212 216 07 24"
+    officePhone: "0212 216 07 24",
+    linkedinUrl: "https://www.linkedin.com/in/zümra-feyzi-5a1a4429b/"
   }
 ]
     },
@@ -698,7 +711,6 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       company: [
         { name: "Hakkımızda", routeKey: "about" },
         { name: "Ekibimiz", routeKey: "team" },
-        { name: "Kariyer" },
         { name: "Yayınlar", routeKey: "articles" },
         { name: "İletişim", routeKey: "contact" },
       ],
@@ -819,7 +831,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       title: "A Deep-Rooted Legacy,",
       highlight: "A Reliable Legal Approach",
       paragraphs: [
-        "HCC Law Office is a law firm grounded in the universal principles of law and committed to delivering effective, reliable and sustainable solutions to its clients. Our roots trace back to Attorney Ömer Baş, who entered the profession in 1955, and to a strong legal tradition spanning three generations.",
+        "HCC Law Office is a law firm grounded in the universal principles of law and committed to delivering effective, reliable and sustainable solutions to its clients. Our roots trace back to Attorney Omer Bas, who entered the profession in 1955, and to a strong legal tradition spanning three generations.",
         "Guided by the values and professional perspective shaped by this legacy, HCC Law Office provides consultancy and litigation services across a broad range of legal practice areas for individuals and companies alike.",
         "Our office focuses not only on resolving existing disputes but also on identifying potential risks in advance through a preventive law approach and managing legal processes strategically. We evaluate each matter on its own merits and adopt a client-oriented, solution-based perspective.",
         "With a working culture centered on human relationships, we act with a service approach based on trust, transparency and ethics, aiming to build long-term solution partnerships with our clients beyond legal representation.",
@@ -883,6 +895,11 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "We assist with data protection compliance, the assessment of processing activities, privacy documentation and legal risk management relating to data security obligations.",
         },
         {
+          title: "Criminal Law",
+          description:
+            "We provide legal representation and advisory support in criminal investigations and proceedings, with careful attention to rights protection, evidence assessment and process management.",
+        },
+        {
           title: "Financial and White-Collar Crimes",
           description:
             "We provide careful and technically grounded defence and advisory services in financial crime investigations and white-collar criminal matters, with due regard for legal and reputational risk.",
@@ -927,21 +944,29 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       members: [
         {
           name: "Hasan Can Cebeci",
-          role: "Attorney at Law",
+          role: "FOUNDER AND MANAGING ATTORNEY",
           image: "/hasan.png",
           description:
             "Advises individual and corporate clients with a strategic, meticulous and solutions-focused approach across a broad range of legal matters.",
           longDescription:
             "Hasan Can Cebeci approaches legal matters with careful analysis, commercial awareness and a strong focus on practical outcomes, providing representation and advisory support tailored to the needs of both individual and corporate clients.",
           education: "Yeditepe University Faculty of Law, Istanbul",
+          languages: ["Turkish", "English"],
           biography: [
             "As the founding and managing attorney of HCC Law Office, he provides legal advisory services, dispute strategy and litigation follow-up for individual and corporate clients, drawing on many years of professional experience. His practice is primarily focused on dispute resolution, litigation strategy and process management.",
             "His areas of work include commercial disputes, inter-company conflicts, litigation arising from construction and work contracts, commitment relationships, receivables and liability claims, and the management of concordat and bankruptcy proceedings. In particular, he focuses on establishing the right legal position from the outset in complex, high-risk and multi-party matters.",
             "Consistent with an approach that does not view disputes as limited to the litigation stage alone, he takes an active role in pre-dispute legal assessment, the management of negotiation processes and matters requiring rapid decision-making in times of crisis. At every stage of the legal process, he adopts a working practice that evaluates the factual reality of a matter together with its commercial and practical dynamics.",
           ],
-          expertise: ["Legal Advisory", "Litigation", "Strategic Case Management"],
+          expertise: [
+            "Commercial and Corporate Law",
+            "Enforcement and Bankruptcy Law",
+            "Real Estate Law",
+            "Labor and Employment Law",
+            "Family and Inheritance Law",
+          ],
           email: "can.cebeci@hcc.av.tr",
-          officePhone: "0212 216 07 24",
+          officePhone: "+90 (212) 216 07 24",
+          linkedinUrl: "https://www.linkedin.com/in/hasan-can-cebeci-332664341/",
         },
         {
           name: "Osman Oy",
@@ -950,69 +975,84 @@ export const siteContent: Record<Locale, SiteDictionary> = {
           description:
             "Applies a structured and forward-looking approach to identifying legal risk and safeguarding client interests at every stage of a matter.",
           longDescription:
-            "Osman Oy focuses on risk assessment and preventive legal strategy, helping clients manage legal processes in a disciplined, organised and commercially conscious manner.",
-          education: "Istanbul Faculty of Law, Istanbul",
+            "Osman Oy has been practicing law since 1974. Drawing on his extensive experience, he provides strategic advisory services to clients in the areas of law, finance, and real estate.",
+          education: "Istanbul University Faculty of Law, Istanbul",
           biography: [
-            "I was born in Erzurum in 1950. After completing my primary education at Iskenderun Namık Kemal Primary School and Bakırkoy Tas Mektep, and graduating from Pertevniyal High School as the second-ranking student of my class, I went on to study at Istanbul University Faculty of Law, where I completed my legal education with good standing. I began my professional career as an attorney in 1974.",
+            "I was born in Erzurum in 1950. After completing my primary education at Iskenderun Namik Kemal Primary School and Bakirkoy Tas Mektep, and graduating from Pertevniyal High School as the second-ranking student of my class, I went on to study at Istanbul University Faculty of Law, where I completed my legal education with good standing. I began my professional career as an attorney in 1974.",
             "Subsequently, as a result of my particular interest in the finance sector, I passed Akbank’s Inspectorate Examination and became a Bank Inspector. After serving as an Inspector at Akbank for 10 years, I accepted a transfer offer and joined the former “Selanik Bank” later known as “International Industrial and Commercial Bank” with the title of Manager. During this period, I resolved numerous major problematic credit cases through projects I personally developed, achieving solutions both for the companies involved and for the bank.",
             "Shortly thereafter, while also retaining responsibility for the Legal Consultancy Department at the same bank, I was promoted to Assistant General Manager, with comprehensive responsibility for Accounting, Financial Planning, Financial Control, Problem Loans, Subsidiary Loans, Credit Control, Bank Subsidiaries, and the Management of Bank Real Estate. In the subsequent course of my banking career, I served as Managing Director and General Manager, Board Member at various banks, and, in the real sector, as Holding General Coordinator, in addition to holding active Board Memberships in various companies operating in sectors such as media, construction, insurance, technology, and trade. As of the beginning of the year 2000, I returned to private legal practice.",
             "Having reached a mature stage in life, I have continued my consultancy work while also devoting greater attention to the book projects I had been working on since my years as an Akbank Inspector. As of today, each publication still gives me the same sense of excitement. In chronological order, I have authored 53 books, including:",
-            "“Without Commentary: The Life Story of Atatürk,” “Law for Bankers,” “Letters of Guarantee for Bankers,” “Mortgages for Bankers,” “Banking Law No. 4389,” “Credit Collaterals and Credit Crimes,” “The Civil and Criminal Liabilities of Bank Board Members,” “Credit and Credit Collaterals in Banking,” “Divorce,” “The Legal Consequences of Divorce,” “Bankruptcy,” “Concordat and Postponement of Bankruptcy,” “Citizenship Handbook,” “Provisional Attachment,” “Collective Housing–Apartment–Plaza Management,” “Checks,” “Financial Leasing, Factoring and Franchising,” “Concordat by Liquidation of Assets,” “Housing Finance System: Mortgage,” “Urban Transformation,” “Construction Agreements in Return for Land Share,” “Restructuring Through Settlement,” “Asset Management Companies,” “Real Estate Investment Trusts,” “Eviction Lawsuits,” “Enforcement of Leasing Receivables,” “The Rights of Husband and Wife under the Regime of Participation in Acquired Property and Inheritance Law,” “Asset Management Companies,” “Patients’ Rights and Legal Remedies,” “Landlord–Tenant Relations,” “Concordat under the New Regulation,” “Joint Stock Companies,” “The Lawyer’s Essential Handbook: Attorney’s Guide,” “Property Ownership and Apartment–Site–Collective Housing Management Handbook,” “Financial Restructuring of Companies in Financial Distress,” “The Systematics of Banking Law No. 5411,” “Divorce Cases Handbook,” “Liquidation of the Regime of Participation in Acquired Property: Handbook,” “Urban Transformation,” “The Lawyer’s Essential Handbook: Family Law Cases Guide,” “Gazi Mustafa Kemal Atatürk,” “The Lawyer’s Essential Handbook: Lease Cases,” “Construction Agreements in Return for Land Share: Handbook,” “Accommodation Facilities and Hotel Management,” “Lease Handbook,” “Ways for Companies to Overcome Financial Crisis: Concordat and Restructuring of the Real Sector’s Debts to the Finance Sector,” “Commentary on Consumer Protection Law No. 6502,” “Gentlemen,” “Gazi Mustafa Kemal Atatürk’s Speeches That Shed Light on History and Shape the Present and the Future,” and “Joint Stock Companies.”",
+            "“Without Commentary: The Life Story of Ataturk,” “Law for Bankers,” “Letters of Guarantee for Bankers,” “Mortgages for Bankers,” “Banking Law No. 4389,” “Credit Collaterals and Credit Crimes,” “The Civil and Criminal Liabilities of Bank Board Members,” “Credit and Credit Collaterals in Banking,” “Divorce,” “The Legal Consequences of Divorce,” “Bankruptcy,” “Concordat and Postponement of Bankruptcy,” “Citizenship Handbook,” “Provisional Attachment,” “Collective Housing–Apartment–Plaza Management,” “Checks,” “Financial Leasing, Factoring and Franchising,” “Concordat by Liquidation of Assets,” “Housing Finance System: Mortgage,” “Urban Transformation,” “Construction Agreements in Return for Land Share,” “Restructuring Through Settlement,” “Asset Management Companies,” “Real Estate Investment Trusts,” “Eviction Lawsuits,” “Enforcement of Leasing Receivables,” “The Rights of Husband and Wife under the Regime of Participation in Acquired Property and Inheritance Law,” “Asset Management Companies,” “Patients’ Rights and Legal Remedies,” “Landlord–Tenant Relations,” “Concordat under the New Regulation,” “Joint Stock Companies,” “The Lawyer’s Essential Handbook: Attorney’s Guide,” “Property Ownership and Apartment–Site–Collective Housing Management Handbook,” “Financial Restructuring of Companies in Financial Distress,” “The Systematics of Banking Law No. 5411,” “Divorce Cases Handbook,” “Liquidation of the Regime of Participation in Acquired Property: Handbook,” “Urban Transformation,” “The Lawyer’s Essential Handbook: Family Law Cases Guide,” “Gazi Mustafa Kemal Ataturk,” “The Lawyer’s Essential Handbook: Lease Cases,” “Construction Agreements in Return for Land Share: Handbook,” “Accommodation Facilities and Hotel Management,” “Lease Handbook,” “Ways for Companies to Overcome Financial Crisis: Concordat and Restructuring of the Real Sector’s Debts to the Finance Sector,” “Commentary on Consumer Protection Law No. 6502,” “Gentlemen,” “Gazi Mustafa Kemal Ataturk’s Speeches That Shed Light on History and Shape the Present and the Future,” and “Joint Stock Companies.”",
             "At present, I continue to provide consultancy services in the fields of Law, Finance, and Real Estate, while also pursuing my ongoing book projects.",
           ],
-          expertise: ["Risk Assessment", "Preventive Law"],
+          expertise: ["Law", "Finance", "Real Estate Advisory"],
           email: "osman.oy@hcc.av.tr",
-          officePhone: "0212 216 07 24",
+          officePhone: "+90 (212) 216 07 24",
+          linkedinUrl: "https://www.linkedin.com/in/av-osman-oy-bbb90557/",
         },
         {
-          name: "Gerçek Onur Oy",
+          name: "Gercek Onur Oy",
           role: "Attorney at Law",
           image: "/onur.png",
           description:
             "Works on dispute resolution, legal advisory and the effective management of contentious and non-contentious legal processes.",
           longDescription:
-            "Gerçek Onur Oy supports clients with a measured and analytical approach to disputes, combining thorough legal review with clear guidance throughout negotiation, litigation and related proceedings.",
+            "Gercek Onur Oy supports clients with a measured and analytical approach to disputes, combining thorough legal review with clear guidance throughout negotiation, litigation and related proceedings.",
           education: [
             "Fordham University School of Law, New York, U.S.\nLL.M. – Banking, Corporate and Finance Law",
+            "Bahcesehir University American Law Certificate Program, Istanbul\nAmerican Law and Comparative Litigation Systems",
             "Yeditepe University Faculty of Law, Istanbul\nBachelor of Laws Program – LL.B.",
-            "Bahçeşehir University American Law Certificate Program, Istanbul\nAmerican Law and Comparative Litigation Systems",
           ],
+          languages: ["Turkish", "English"],
           biography: [
-            "Gerçek Onur Oy holds an LL.M. degree in Banking, Corporate and Finance Law from Fordham University School of Law. After completing his undergraduate legal education at Yeditepe University Faculty of Law, he pursued further studies in American Law and Comparative Litigation Systems through the Bahçeşehir University American Law Certificate Program.",
+            "Gercek Onur Oy holds an LL.M. degree in Banking, Corporate and Finance Law from Fordham University School of Law. After completing his undergraduate legal education at Yeditepe University Faculty of Law, he pursued further studies in American Law and Comparative Litigation Systems through the Bahcesehir University American Law Certificate Program.",
             "During his studies in New York, he provided sector research and business plan preparation support at ADA Business Strategies LLC for individuals and entities seeking to invest in the U.S. He also worked as a financial data analyst at MAP Trading LLC, located in the Wall Street financial district.",
-            "With published book projects in family law, inheritance law, lease and real estate law, corporate law, banking law, condominium law and urban transformation, Gerçek Onur Oy combines his academic background with practical legal experience. His command of Turkish and English enables him to provide effective legal services to clients at both national and international levels.",
+            "With published book projects in family law, inheritance law, lease and real estate law, corporate law, banking law, condominium law and urban transformation, Gercek Onur Oy combines his academic background with practical legal experience. His command of Turkish and English enables him to provide effective legal services to clients at both national and international levels.",
           ],
-          expertise: ["Dispute Resolution", "Legal Assessment"],
+          expertise: [
+            "Family Law",
+            "Real Estate Law",
+            "Law of Obligations",
+            "Enforcement and Bankruptcy Law",
+            "Commercial and Corporate Law",
+          ],
           email: "gercek.oy@hcc.av.tr",
-          officePhone: "0212 216 07 24",
+          officePhone: "+90 (212) 216 07 24",
+          linkedinUrl: "https://www.linkedin.com/in/gercekoy/",
         },
         {
-          name: "M. Batuhan Çelik",
+          name: "M. Batuhan Celik",
           role: "Trainee Attorney",
           image: "/batuhan.png",
           description:
             "Supports the team through legal research, document review and the careful preparation of case and advisory files.",
           longDescription:
-            "M. Batuhan Çelik contributes to the office through disciplined legal research, attentive file preparation and reliable support across day-to-day legal and operational workflows.",
+            "M. Batuhan Celik contributes to the firm through disciplined legal research, attentive file preparation, and reliable support across day-to-day legal and operational workflows. He also continues to develop his practice across various fields of law, particularly in Criminal Law, Family Law, and Enforcement and Bankruptcy Law.",
           education: "Turkish-German University Faculty of Law, Istanbul",
-          languages: ["Türkçe", "Almanca", "İngilizce"],
-          expertise: ["Legal Research", "File Preparation"],
+          languages: ["Turkish", "German", "English"],
+          expertise: ["Criminal Law", "Legal Research", "File Preparation"],
           email: "batuhan.celik@hcc.av.tr",
-          officePhone: "0212 216 07 24",
+          officePhone: "+90 (212) 216 07 24",
+          linkedinUrl: "https://www.linkedin.com/in/batuhan-çelik-2907662b1/",
         },
         {
-          name: "Zümra Miray Feyzi",
+          name: "Zumra Miray Feyzi",
           role: "Trainee Attorney",
           image: "/zumra.png",
           description:
             "Provides support in documentation, legal review and the organisation of internal legal processes.",
           longDescription:
-            "Zümra Miray Feyzi supports the office with a careful and organised working style, contributing to documentation, legal review and the smooth coordination of internal processes.",
+            "Zumra Miray Feyzi supports the firm with a careful and organised working style, contributing to documentation, legal review, and the smooth coordination of internal processes. She also continues her work in the fields of Commercial and Corporate Law, as well as Labor and Employment Law.",
           education: "MEF University Faculty of Law, Istanbul",
-          languages: ["Türkçe", "İngilizce"],
-          expertise: ["Documentation", "Legal Review"],
+          languages: ["Turkish", "English"],
+          expertise: [
+            "Commercial and Corporate Law",
+            "Labor and Employment Law",
+            "Competition Law",
+          ],
           email: "zumra.feyzi@hcc.av.tr",
-          officePhone: "0212 216 07 24",
+          officePhone: "+90 (212) 216 07 24",
+          linkedinUrl: "https://www.linkedin.com/in/zümra-feyzi-5a1a4429b/",
         },
       ],
     },
@@ -1089,13 +1129,13 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       preMeetingDescription:
         "To help us review your matter more efficiently, you may include the subject of your inquiry, relevant company or institution details if any, and your preferred callback method in your message.",
       addressLabel: "Address",
-      address: ["Balmumcu Mah. Gazi Umur Paşa Sok. No:24/7", "Beşiktaş / Istanbul"],
+      address: ["Balmumcu Mah. Gazi Umur Pasa Sok. No:24/7", "Besiktas / Istanbul, Turkey"],
       phoneLabel: "Phone",
-      phone: "0212 216 07 24",
+      phone: "+90 (212) 216 07 24",
       emailLabel: "Email",
       email: "info@hcc.av.tr",
       hoursLabel: "Office Hours",
-      hours: "Monday - Friday, 09:00 - 18:00",
+      hours: "Monday - Friday, 9:00 am – 6:00 pm",
       formTitle: "Send Us a Message",
       formDescription: "We will get back to you as soon as possible.",
       nameLabel: "Full Name",
@@ -1128,7 +1168,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
     footer: {
       summary:
         "HCC Law Office provides effective, reliable and solution-oriented legal services to its clients. With its deep-rooted history and expert team, the office aims to deliver sustainable legal advisory services.",
-      servicesTitle: "Services",
+      servicesTitle: "SERVICES",
       companyTitle: "Corporate",
       legalTitle: "Legal",
       services: [
@@ -1142,7 +1182,6 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       company: [
         { name: "About", routeKey: "about" },
         { name: "Team", routeKey: "team" },
-        { name: "Careers" },
         { name: "Publications", routeKey: "articles" },
         { name: "Contact", routeKey: "contact" },
       ],

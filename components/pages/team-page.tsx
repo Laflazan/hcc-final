@@ -6,7 +6,6 @@ import { Linkedin, X } from "lucide-react";
 import {
   getDictionary,
   getTeamMembers,
-  LINKEDIN_COMPANY_URL,
   type Locale,
 } from "@/lib/site";
 
@@ -29,7 +28,7 @@ export function TeamPage({ locale }: TeamPageProps) {
           mobilePhone: "Cep Telefonu",
           education: "Eğitim",
           biography: "Biyografi",
-          languages: "Yabancı Diller",
+          languages: "Dil",
           birthInfo: "Doğum Bilgisi",
           startYear: "Başlangıç Yılı",
           expertise: "Uzmanlık Alanları",
@@ -40,7 +39,7 @@ export function TeamPage({ locale }: TeamPageProps) {
           mobilePhone: "Mobile Phone",
           education: "Education",
           biography: "Biography",
-          languages: "Languages",
+          languages: "Language",
           birthInfo: "Birth Information",
           startYear: "Start Year",
           expertise: "Practice Areas",
@@ -159,7 +158,7 @@ export function TeamPage({ locale }: TeamPageProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/84 via-foreground/22 via-55% to-transparent opacity-90 transition duration-500 md:group-hover:from-foreground/90 md:group-hover:via-foreground/30" />
 
                 <a
-                  href={LINKEDIN_COMPANY_URL}
+                  href={member.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(event) => event.stopPropagation()}
@@ -227,9 +226,22 @@ export function TeamPage({ locale }: TeamPageProps) {
 
             <p className="mt-1 text-gold">{selectedMember.role}</p>
 
-            <p className="mt-4 text-muted-foreground">
-              {selectedMember.longDescription}
-            </p>
+            <div className="mt-6">
+              <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
+                {detailLabels.expertise}
+              </p>
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              {selectedMember.expertise.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-md border border-border px-3 py-2 text-sm text-muted-foreground"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
 
             {educationItems.length ? (
               <div className="mt-8">
@@ -251,24 +263,6 @@ export function TeamPage({ locale }: TeamPageProps) {
               </div>
             ) : null}
 
-            {selectedMember.biography?.length ? (
-              <div className="mt-8 border-t border-border pt-6">
-                <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
-                  {detailLabels.biography}
-                </p>
-                <div className="mt-4 space-y-4">
-                  {selectedMember.biography.map((paragraph, index) => (
-                    <p
-                      key={`${selectedMember.name}-biography-${index}`}
-                      className="text-sm leading-7 text-muted-foreground"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-
             {selectedMember.languages?.length ? (
               <div className="mt-8 border-t border-border pt-6">
                 <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
@@ -285,6 +279,29 @@ export function TeamPage({ locale }: TeamPageProps) {
                       </span>
                     ))}
                   </div>
+                </div>
+              </div>
+            ) : null}
+
+            {selectedMember.longDescription || selectedMember.biography?.length ? (
+              <div className="mt-8 border-t border-border pt-6">
+                <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
+                  {detailLabels.biography}
+                </p>
+                <div className="mt-4 space-y-4">
+                  {selectedMember.longDescription ? (
+                    <p className="text-sm leading-7 text-muted-foreground">
+                      {selectedMember.longDescription}
+                    </p>
+                  ) : null}
+                  {selectedMember.biography?.map((paragraph, index) => (
+                    <p
+                      key={`${selectedMember.name}-biography-${index}`}
+                      className="text-sm leading-7 text-muted-foreground"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </div>
             ) : null}
@@ -322,22 +339,6 @@ export function TeamPage({ locale }: TeamPageProps) {
               </div>
             ) : null}
 
-            <div className="mt-6">
-              <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
-                {detailLabels.expertise}
-              </p>
-            </div>
-
-            <div className="mt-4 flex flex-wrap gap-3">
-              {selectedMember.expertise.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-md border border-border px-3 py-2 text-sm text-muted-foreground"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
       )}

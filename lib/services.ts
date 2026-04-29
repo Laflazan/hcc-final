@@ -416,6 +416,53 @@ const serviceRecords: ServiceRecord[] = [
     },
   },
   {
+    id: "criminal-law",
+    iconKey: "gavel",
+    relatedIds: ["litigation-and-dispute-resolution", "financial-and-white-collar-crimes"],
+    locales: {
+      tr: {
+        slug: "ceza-hukuku",
+        longDescription:
+          "Ceza hukuku, soru\u015fturma ve kovu\u015fturma s\u00fcre\u00e7lerinde haklar\u0131n korunmas\u0131, delillerin do\u011fru de\u011ferlendirilmesi ve usuli g\u00fcvencelerin etkin bi\u00e7imde kullan\u0131lmas\u0131 bak\u0131m\u0131ndan dikkatli bir hukuki yakla\u015f\u0131m gerektirir. HCC Avukatl\u0131k B\u00fcrosu, ceza hukuku kapsam\u0131ndaki uyu\u015fmazl\u0131klarda m\u00fcvekkillerine s\u00fcrecin her a\u015famas\u0131nda \u00f6zenli temsil ve dan\u0131\u015fmanl\u0131k sunmaktad\u0131r.",
+        sections: [
+          {
+            heading: "Soru\u015fturma ve Kovu\u015fturma S\u00fcre\u00e7leri",
+            paragraphs: [
+              "Ceza soru\u015fturmalar\u0131nda ifade, delil de\u011ferlendirmesi, koruma tedbirleri ve ba\u015fvuru yollar\u0131 bak\u0131m\u0131ndan m\u00fcvekkillerimize hukuki destek sa\u011fl\u0131yoruz.",
+              "Kovu\u015fturma a\u015famas\u0131nda ise dosyan\u0131n maddi ve hukuki y\u00f6nlerini birlikte ele alarak savunma stratejisinin kurulmas\u0131 ve duru\u015fma s\u00fcre\u00e7lerinin takibi konular\u0131nda temsil hizmeti sunuyoruz.",
+            ],
+          },
+          {
+            heading: "Haklar\u0131n Korunmas\u0131",
+            paragraphs: [
+              "Ceza hukuku alan\u0131ndaki dosyalarda, ki\u015fisel hak ve \u00f6zg\u00fcrl\u00fckleri ilgilendiren s\u00fcre\u00e7lerin hassasiyetini g\u00f6zeterek usule uygun, dikkatli ve sonu\u00e7 odakl\u0131 bir yakla\u015f\u0131m benimsiyoruz.",
+            ],
+          },
+        ],
+      },
+      en: {
+        slug: "criminal-law",
+        longDescription:
+          "Criminal law requires a careful legal approach to protect rights, assess evidence correctly and use procedural safeguards effectively throughout investigation and prosecution stages. HCC Law Office provides attentive representation and advisory support to clients in criminal-law matters at every stage of the process.",
+        sections: [
+          {
+            heading: "Investigation and Prosecution Processes",
+            paragraphs: [
+              "We support clients during criminal investigations in relation to statements, evidence assessment, protective measures and available legal remedies.",
+              "At the prosecution stage, we provide representation in building the defence strategy and following hearing processes by evaluating both the factual and legal aspects of the file.",
+            ],
+          },
+          {
+            heading: "Protection of Rights",
+            paragraphs: [
+              "In criminal-law matters, we adopt a careful, procedurally sound and results-oriented approach while taking into account the sensitivity of processes involving personal rights and freedoms.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
     id: "financial-and-white-collar-crimes",
     iconKey: "gavel",
     relatedIds: ["litigation-and-dispute-resolution", "tax-and-financial-services"],

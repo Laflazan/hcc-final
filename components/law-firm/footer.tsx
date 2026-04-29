@@ -42,12 +42,8 @@ export function Footer() {
               href={getPath(locale, "home")}
               className="font-serif text-xl font-semibold tracking-tight"
             >
-              HCC<span className="text-gold">.</span>
+              HCC
             </Link>
-
-            <p className="mt-4 text-sm leading-relaxed text-background/60">
-              {dictionary.footer.summary}
-            </p>
 
             <div className="mt-6 flex gap-4">
               <a
