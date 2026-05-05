@@ -522,7 +522,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
   },
   {
     name: "Gerçek Onur Oy",
-    role: "Avukat",
+    role: "Yönetici Avukat",
     description: "Bireysel ve kurumsal müvekkillere danışmanlık ve dava süreçlerinde etkin hukuki çözümler sunmaktadır.",
     longDescription: "Av. Gerçek Onur Oy, bireysel ve kurumsal müvekkillere yönelik hukuki danışmanlık, uyuşmazlık çözümü ve dava takibi alanlarında faaliyet göstermektedir.",
     expertise: [
@@ -992,7 +992,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         },
         {
           name: "Gercek Onur Oy",
-          role: "Attorney at Law",
+          role: "Managing Attorney at Law",
           image: "/onur.png",
           description:
             "Works on dispute resolution, legal advisory and the effective management of contentious and non-contentious legal processes.",
