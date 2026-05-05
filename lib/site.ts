@@ -944,7 +944,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       members: [
         {
           name: "Hasan Can Cebeci",
-          role: "FOUNDER AND MANAGING ATTORNEY",
+          role: "Founder and Managing Attorney",
           image: "/hasan.png",
           description:
             "Advises individual and corporate clients with a strategic, meticulous and solutions-focused approach across a broad range of legal matters.",
@@ -1030,7 +1030,12 @@ export const siteContent: Record<Locale, SiteDictionary> = {
             "M. Batuhan Celik contributes to the firm through disciplined legal research, attentive file preparation, and reliable support across day-to-day legal and operational workflows. He also continues to develop his practice across various fields of law, particularly in Criminal Law, Family Law, and Enforcement and Bankruptcy Law.",
           education: "Turkish-German University Faculty of Law, Istanbul",
           languages: ["Turkish", "German", "English"],
-          expertise: ["Criminal Law", "Legal Research", "File Preparation"],
+          expertise: [
+            "Criminal Law",
+            "Family Law",
+            "Inheritance Law",
+            "Enforcement and Bankruptcy Law",
+          ],
           email: "batuhan.celik@hcc.av.tr",
           officePhone: "+90 (212) 216 07 24",
           linkedinUrl: "https://www.linkedin.com/in/batuhan-çelik-2907662b1/",

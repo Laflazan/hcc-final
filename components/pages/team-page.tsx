@@ -226,6 +226,12 @@ export function TeamPage({ locale }: TeamPageProps) {
 
             <p className="mt-1 text-gold">{selectedMember.role}</p>
 
+            {selectedMember.longDescription ? (
+              <p className="mt-4 text-muted-foreground">
+                {selectedMember.longDescription}
+              </p>
+            ) : null}
+
             <div className="mt-6">
               <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
                 {detailLabels.expertise}
@@ -283,17 +289,12 @@ export function TeamPage({ locale }: TeamPageProps) {
               </div>
             ) : null}
 
-            {selectedMember.longDescription || selectedMember.biography?.length ? (
+            {selectedMember.biography?.length ? (
               <div className="mt-8 border-t border-border pt-6">
                 <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gold">
                   {detailLabels.biography}
                 </p>
                 <div className="mt-4 space-y-4">
-                  {selectedMember.longDescription ? (
-                    <p className="text-sm leading-7 text-muted-foreground">
-                      {selectedMember.longDescription}
-                    </p>
-                  ) : null}
                   {selectedMember.biography?.map((paragraph, index) => (
                     <p
                       key={`${selectedMember.name}-biography-${index}`}
