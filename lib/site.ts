@@ -552,7 +552,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
     name: "M. Batuhan Çelik",
     role: "Stajyer Avukat",
     description: "Çeşitli özel hukuk alanlarında uyuşmazlık çözümü ve dava süreçlerinde çalışmalarını sürdürmektedir.",
-    longDescription: "M. Batuhan Çelik, disiplinli hukuki araştırmaları, özenli dosya hazırlığı ve günlük hukuki operasyonel iş süreçlerinde sunduğu güvenilir destekle büroya katkı sağlamaktadır. Ayrıca, başta Ceza Hukuku, Aile Hukuku ve İcra ve İflas Hukuku olmak üzere hukukun çeşitli alanlarında çalışmalarına devam etmektedir.",
+    longDescription: "M. Batuhan Çelik, Türk-Alman Üniversitesi Hukuk Fakültesi’nden onur derecesinde mezun olmuştur. Eğitim sürecinde edindiği Alman ekolü yaklaşımını benimseyerek, hukuki ihtilaflara sistematik ve çözüm odaklı bir bakış açısıyla yaklaşmaktadır. Ceza Hukuku, Deniz İş Hukuku, Sigorta Hukuku, Ticaret Hukuku, Gayrimenkul Hukuku, Aile ve Miras Hukuku ile İcra ve İflas Hukuku olmak üzere, hukukun çeşitli alanlarında faaliyetlerini sürdürmektedir.",
     expertise: [
       "Ceza Hukuku",
       "Aile Hukuku",
@@ -1027,7 +1027,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
           description:
             "Supports the team through legal research, document review and the careful preparation of case and advisory files.",
           longDescription:
-            "M. Batuhan Celik contributes to the firm through disciplined legal research, attentive file preparation, and reliable support across day-to-day legal and operational workflows. He also continues to develop his practice across various fields of law, particularly in Criminal Law, Family Law, and Enforcement and Bankruptcy Law.",
+            "M. Batuhan Çelik graduated with honors from the Faculty of Law at Turkish-German University. Adopting the German legal school approach acquired throughout his academic education, he approaches legal disputes with a systematic and solution-oriented perspective. He practices in various fields of law, including Criminal Law, Maritime Labor Law, Insurance Law, Commercial Law, Real Estate Law, Family and Inheritance Law, as well as Enforcement and Bankruptcy Law.",
           education: "Turkish-German University Faculty of Law, Istanbul",
           languages: ["Turkish", "German", "English"],
           expertise: [
