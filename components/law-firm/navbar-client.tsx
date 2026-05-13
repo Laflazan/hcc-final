@@ -112,6 +112,8 @@ export function NavbarClient() {
   const homeHref = getPath(locale, "home");
   const contactHref = getPath(locale, "contact");
   const languageHref = switchLocalePath(pathname, locale === "tr" ? "en" : "tr");
+  const logoSrc = locale === "en" ? "/hcclogoen.png" : "/HCC_LOGO-removebg-preview.png";
+  const logoAlt = locale === "en" ? "HCC Law Firm" : "HCC Avukatlık Bürosu";
 
   const navigation = useMemo(
     () =>
@@ -167,8 +169,8 @@ export function NavbarClient() {
           >
             <NavbarLogo
               href={homeHref}
-              src="/HCC_LOGO-removebg-preview.png"
-              alt={locale === "tr" ? "HCC Avukatlık Bürosu" : "HCC Law Firm"}
+              src={logoSrc}
+              alt={logoAlt}
               width={160}
               height={42}
               className="h-full w-full object-contain object-left transition-all duration-500 group-hover:scale-[1.02]"
