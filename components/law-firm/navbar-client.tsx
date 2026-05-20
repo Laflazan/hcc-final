@@ -112,7 +112,7 @@ export function NavbarClient() {
   const homeHref = getPath(locale, "home");
   const contactHref = getPath(locale, "contact");
   const languageHref = switchLocalePath(pathname, locale === "tr" ? "en" : "tr");
-  const logoSrc = locale === "en" ? "/hcclogoen.png" : "/HCC_LOGO-removebg-preview.png";
+  const logoSrc = locale === "en" ? "/hcclogo-en-navbar.png" : "/hcclogo-tr-navbar.png";
   const logoAlt = locale === "en" ? "HCC Law Firm" : "HCC Avukatlık Bürosu";
 
   const navigation = useMemo(
@@ -160,20 +160,11 @@ export function NavbarClient() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center lg:flex-1">
-          <div
-            className={`ml-1.5 flex items-center transition-all duration-500 ${
-              scrolled
-                ? "h-9 w-[132px] sm:h-10 sm:w-[148px]"
-                : "h-10 w-[142px] sm:h-[42px] sm:w-[160px]"
-            }`}
-          >
+          <div className="ml-1.5 flex items-center">
             <NavbarLogo
               href={homeHref}
               src={logoSrc}
               alt={logoAlt}
-              width={160}
-              height={42}
-              className="h-full w-full object-contain object-left transition-all duration-500 group-hover:scale-[1.02]"
             />
           </div>
         </div>
