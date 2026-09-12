@@ -54,6 +54,143 @@ export type ArticleDetail = ArticleListItem & {
 
 const articleRecords: ArticleRecord[] = [
   {
+    id: "secure-payment-real-estate-sales",
+    image: "/articles/guvenliodeme.jpg",
+    publishedAt: "2026-10-01",
+    locales: {
+      tr: {
+        slug: "guvenli-odeme-sistemi-tasinmaz-satislari",
+        title: "Tapuda Yeni Dönem 1 Ekim 2026'da Başlıyor!",
+        category: "Hukuk",
+        date: "1 Ekim 2026",
+        author: "HCC Avukatlık Bürosu",
+        excerpt:
+          "29 Nisan 2026 tarihli ve 33238 sayılı Resmî Gazete'de yayımlanan Taşınmaz Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik ile taşınmaz satışlarında güvenli ödeme sistemine ilişkin hukuki çerçeve oluşturulmuştur. Taşınmaz Ticareti Hakkında Yönetmelik'in ek 1'inci maddesinde düzenlenen sistem, taşınmaz mülkiyeti ile satış bedelinin eş zamanlı el değiştirmesini sağlayarak ödeme ve tescil süreçlerinden kaynaklanan riskleri azaltmayı amaçlamaktadır.",
+        seoTitle: "Tapuda Yeni Dönem 1 Ekim 2026'da Başlıyor!",
+        seoDescription:
+          "29 Nisan 2026 tarihli ve 33238 sayılı Resmî Gazete'de yayımlanan Taşınmaz Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik ile taşınmaz satışlarında güvenli ödeme sistemine ilişkin hukuki çerçeve oluşturulmuştur. Taşınmaz Ticareti Hakkında Yönetmelik'in ek 1'inci maddesinde düzenlenen sistem, taşınmaz mülkiyeti ile satış bedelinin eş zamanlı el değiştirmesini sağlayarak ödeme ve tescil süreçlerinden kaynaklanan riskleri azaltmayı amaçlamaktadır.",
+        introduction:
+          "29 Nisan 2026 tarihli ve 33238 sayılı Resmî Gazete'de yayımlanan Taşınmaz Ticareti Hakkında Yönetmelikte Değişiklik Yapılmasına Dair Yönetmelik ile taşınmaz satışlarında güvenli ödeme sistemine ilişkin hukuki çerçeve oluşturulmuştur. Taşınmaz Ticareti Hakkında Yönetmelik'in ek 1'inci maddesinde düzenlenen sistem, taşınmaz mülkiyeti ile satış bedelinin eş zamanlı el değiştirmesini sağlayarak ödeme ve tescil süreçlerinden kaynaklanan riskleri azaltmayı amaçlamaktadır.",
+        sections: [
+          {
+            heading: "Taşınmaz Satışlarında Güvenli Ödeme Sistemi",
+            paragraphs: [
+              "Sistem uyarınca alıcı, satış bedelini doğrudan satıcıya ödemek yerine yetkilendirilen ödeme sistemi üzerinden güvenli hesaba aktarır. Bedel, tapu sicilindeki tescil işlemi tamamlanıncaya kadar hesapta bloke edilir; tescilin gerçekleşmesi üzerine satıcıya aktarılır. Satış işleminin tamamlanmaması hâlinde ise bedel alıcıya iade edilir. Böylece tarafların asli edimleri olan mülkiyetin devri ile satış bedelinin ödenmesi eş zamanlı olarak ifa edilir.",
+            ],
+          },
+          {
+            heading: "Yürürlük Tarihi ve Erteleme Yetkisi",
+            paragraphs: [
+              "Yönetmelik'in geçici 1'inci maddesinin onuncu fıkrası uyarınca sistemin 1 Temmuz 2026'dan itibaren zorunlu uygulanması öngörülmüş; Ticaret Bakanlığına bu tarihi üç aya kadar uzatma yetkisi tanınmıştır. Bakanlık, 26 Haziran 2026 tarihli duyurusuyla teknik süreç ve entegrasyonların tamamlanabilmesi amacıyla bu yetkiyi kullanmış ve zorunlu uygulama tarihini 1 Ekim 2026 olarak belirlemiştir.",
+            ],
+          },
+          {
+            heading: "Sistemin Kapsamı",
+            paragraphs: [
+              "Düzenleme yalnızca emlak işletmeleri aracılığıyla gerçekleştirilen satışlarla sınırlı değildir. Yönetmelik'in ek 1'inci maddesi, işletmelerin yanı sıra diğer gerçek ve tüzel kişilerin taşınmaz satışlarını da kapsadığından, tarafların herhangi bir emlak işletmesi aracılığı olmaksızın gerçekleştirdikleri bireysel satışlar da kural olarak sistemin uygulama alanındadır.",
+              "Sistem; satış bedelinin bir kısmının veya tamamının nakit, havale, elektronik fon transferi ya da Bakanlıkça belirlenecek diğer ödeme yöntemleriyle karşılandığı işlemlerde uygulanacaktır. Satış bedelinin 5411 sayılı Bankacılık Kanunu'nda tanımlanan bankalar veya 6361 sayılı Kanun'da tanımlanan finansman ve tasarruf finansman şirketleri tarafından kredilendirildiği işlemlerde ise güvenli ödeme sistemi yalnızca kredi tutarı dışında kalan ödemeler bakımından kullanılacaktır. Bakanlık, belirleyeceği bazı taşınmaz satışlarını sistemin kapsamı dışında bırakabilecektir.",
+              "Yönetmelik uyarınca sistem üzerinden yapılan her işlem için kullanım bedeli alınacak ve bu bedel, satıcıya aktarılacak satış bedelinden mahsup edilecektir. Ayrıca sistemin işleyişinin takibi, teknik sorunların tespiti ve çözüm önerilerinin geliştirilmesi amacıyla Ticaret Bakanlığı ile Çevre, Şehircilik ve İklim Değişikliği Bakanlığı temsilcilerinden oluşan bir komisyon kurulacaktır. Sistemin işletilmesine, istisnalara ve kullanım bedeline ilişkin ayrıntılı usul ve esaslar Bakanlıkça duyurulacaktır.",
+            ],
+          },
+          {
+            heading: "Güvenli Ödeme Sistemi Klasik Escrow Modelinden Nasıl Ayrılır?",
+            paragraphs: [
+              "Güvenli ödeme sistemi, Anglo-Sakson hukuk sistemlerinde yaygın olarak kullanılan escrow modeline benzer bir güvence işlevi görmektedir. Escrow ilişkisinde ödeme tutarı, kararlaştırılan şartlar gerçekleşinceye kadar bağımsız bir üçüncü kişi veya kuruluş nezdinde tutulur; şartların gerçekleşmesi hâlinde lehtara aktarılır, aksi hâlde ödeyene iade edilir.",
+              "Türk hukukunda düzenlenen güvenli ödeme sistemi benzer bir mekanizmaya dayanmakla birlikte kapsamı daha sınırlıdır. Sözleşmesel escrow uygulamalarında ipoteğin fekki, teslim, yapı denetimi, teknik inceleme veya diğer özel şartlar ödemenin serbest bırakılmasına bağlanabilirken; güvenli ödeme sisteminde belirleyici unsur, tapu sicilinde mülkiyetin devrine ilişkin tescilin gerçekleşmesidir. Ayrıca sözleşmesel escrow ihtiyari ve esnek bir yapıdayken, Türkiye'deki sistem Yönetmelik kapsamına giren işlemler bakımından zorunlu ve idari denetime tabi olacaktır.",
+            ],
+          },
+          {
+            heading:
+              "Güvenli Ödeme Sisteminin Alıcı ve Satıcı Bakımından Hukuki Sonuçları",
+            paragraphs: [
+              "Güvenli ödeme sistemi, taşınmaz satışlarında alıcı ve satıcı bakımından karşılıklı bir güvence mekanizması oluşturmaktadır. Alıcı, satış bedelini ödediği hâlde mülkiyetin devrine ilişkin tescilin gerçekleşmemesi; satıcı ise tescil gerçekleştiği hâlde satış bedelini tahsil edememesi riskine karşı korunmaktadır. Türk Medeni Kanunu'nun 705'inci maddesi uyarınca taşınmaz mülkiyeti kural olarak tescille kazanıldığından, ödeme ile tescilin eş zamanlı hâle getirilmesi uygulamada önem taşımaktadır.",
+              "Ödemenin izlenebilir ve belgelenebilir kanallar üzerinden yapılması, satış bedelinin gerçeğe aykırı şekilde düşük gösterilmesini zorlaştırarak tapu harcı ve değer artış kazancı bakımından kayıt dışılığın azaltılmasına katkı sağlayacaktır. Ayrıca elden nakit ödemenin beraberinde getirdiği sahte para, hırsızlık, dolandırıcılık ve ispat güçlüğü gibi risklerin önüne geçilmesi amaçlanmaktadır.",
+              "Bununla birlikte sistemin sağladığı güvence, esasen tescil ile satış bedelinin ödenmesinin eş zamanlılığıyla sınırlıdır. Taşınmaz satış sözleşmesinin resmî şekilde yapılmasına ilişkin Türk Medeni Kanunu'nun 706'ncı ve Türk Borçlar Kanunu'nun 237'nci maddeleri saklıdır. Taşınmazın teslimi, ayıptan doğan sorumluluk, kapora veya cayma parası, ödeme planı, takyidatlar, imar durumu ve benzeri hususların ayrıca hukuki incelemeye tabi tutulması ve sözleşmede açıkça düzenlenmesi önemini korumaktadır.",
+              "Sistem dışında bırakılacak satış türleri, kullanım bedelinin kapsamı, sistemi işletecek kuruluşların görev ve sorumlulukları ile yabancı alıcıların taraf olduğu işlemlerde kambiyo mevzuatına uyum gibi konuların, Bakanlıkça yayımlanacak ikincil düzenlemeler ve uygulama duyurularıyla netleşmesi beklenmektedir.",
+            ],
+          },
+          {
+            paragraphs: [
+              "Sonuç olarak güvenli ödeme sistemi, taşınmaz satışlarında bedelin ödenmesi ile mülkiyetin devri arasındaki ifa riskini azaltmayı amaçlayan önemli bir düzenlemedir. Uygulamanın işlem güvenliğini ve şeffaflığı artırması, uyuşmazlık riskini azaltması ve taşınmaz piyasasında kayıtlılığı desteklemesi beklenmektedir. Bununla birlikte sistem, satış öncesi hukuki incelemenin ve somut işleme uygun sözleşme düzenlenmesinin yerini almamaktadır.",
+            ],
+          },
+          {
+            heading: "Yasal Bilgilendirme",
+            paragraphs: [
+              "Bu içerik yalnızca genel bilgilendirme amacıyla hazırlanmış olup hukuki görüş, mütalaa veya danışmanlık niteliği taşımamaktadır. Somut olaylara ilişkin hukuki değerlendirme ve danışmanlık talepleriniz için bizimle iletişime geçebilirsiniz.",
+              "Tüm hakları saklıdır.",
+            ],
+          },
+        ],
+      },
+      en: {
+        slug: "secure-payment-system-real-estate-sales",
+        title: "A New Era in Title Deed Transactions Begins on 1 October 2026",
+        category: "Law",
+        date: "1 October 2026",
+        author: "HCC Law Office",
+        excerpt:
+          "The Regulation Amending the Regulation on Real Estate Trade, published in the Official Gazette dated 29 April 2026 and numbered 33238, established the legal framework for the secure payment system in real estate sales. The system regulated under additional Article 1 of the Regulation on Real Estate Trade aims to reduce risks arising from payment and registration processes by ensuring that real estate ownership and the sale price change hands simultaneously.",
+        seoTitle: "Secure Payment System for Real Estate Sales in Türkiye",
+        seoDescription:
+          "The secure payment system for real estate sales in Türkiye was established by the amendment published in the Official Gazette dated 29 April 2026 and numbered 33238.",
+        introduction:
+          "The Regulation Amending the Regulation on Real Estate Trade, published in the Official Gazette dated 29 April 2026 and numbered 33238, established the legal framework for the secure payment system in real estate sales. The system regulated under additional Article 1 of the Regulation on Real Estate Trade aims to reduce risks arising from payment and registration processes by ensuring that real estate ownership and the sale price change hands simultaneously.",
+        sections: [
+          {
+            heading: "Secure Payment System for Real Estate Sales",
+            paragraphs: [
+              "Under the system, instead of paying the sale price directly to the seller, the buyer transfers it to a secure account through the authorized payment system. The amount is blocked in the account until the registration process in the land registry is completed; upon completion of the registration, it is transferred to the seller. If the sale transaction is not completed, the amount is returned to the buyer. In this way, the parties' primary obligations, namely the transfer of ownership and the payment of the sale price, are performed simultaneously.",
+            ],
+          },
+          {
+            heading: "Effective Date and Authority to Postpone",
+            paragraphs: [
+              "Pursuant to the tenth paragraph of provisional Article 1 of the Regulation, the system was envisaged to become mandatory as of 1 July 2026; the Ministry of Trade was authorized to postpone this date for up to three months. The Ministry exercised this authority by its announcement dated 26 June 2026 in order to allow the technical processes and integrations to be completed, and set the mandatory implementation date as 1 October 2026.",
+            ],
+          },
+          {
+            heading: "Scope of the System",
+            paragraphs: [
+              "The regulation is not limited solely to sales carried out through real estate businesses. Since additional Article 1 of the Regulation covers real estate sales by other natural and legal persons as well as businesses, individual sales carried out by the parties without the involvement of any real estate business are, as a rule, also within the scope of the system.",
+              "The system will apply to transactions in which part or all of the sale price is paid in cash, by remittance, electronic funds transfer, or other payment methods to be determined by the Ministry. In transactions where the sale price is financed by banks as defined under Banking Law No. 5411 or by financing and savings financing companies as defined under Law No. 6361, the secure payment system will be used only for payments remaining outside the loan amount. The Ministry may exclude certain real estate sales to be determined by it from the scope of the system.",
+              "Under the Regulation, a usage fee will be charged for each transaction carried out through the system, and this fee will be deducted from the sale price to be transferred to the seller. In addition, a commission composed of representatives of the Ministry of Trade and the Ministry of Environment, Urbanization and Climate Change will be established to monitor the operation of the system, identify technical problems, and develop proposed solutions. Detailed procedures and principles regarding the operation of the system, exceptions, and the usage fee will be announced by the Ministry.",
+            ],
+          },
+          {
+            heading: "How Does the Secure Payment System Differ from the Traditional Escrow Model?",
+            paragraphs: [
+              "The secure payment system performs a safeguard function similar to the escrow model commonly used in Anglo-Saxon legal systems. In an escrow relationship, the payment amount is held by an independent third person or institution until the agreed conditions are fulfilled; if the conditions are fulfilled, it is transferred to the beneficiary, and otherwise it is returned to the payer.",
+              "Although the secure payment system regulated under Turkish law is based on a similar mechanism, its scope is more limited. In contractual escrow arrangements, the release of a mortgage, delivery, building inspection, technical review, or other special conditions may be linked to the release of payment; whereas under the secure payment system, the decisive element is the completion of registration for the transfer of ownership in the land registry. In addition, while contractual escrow is optional and flexible, the system in Türkiye will be mandatory and subject to administrative oversight for transactions falling within the scope of the Regulation.",
+            ],
+          },
+          {
+            heading:
+              "Legal Implications of the Secure Payment System for Buyers and Sellers",
+            paragraphs: [
+              "The secure payment system creates a mutual safeguard mechanism for buyers and sellers in real estate sales. The buyer is protected against the risk that registration for the transfer of ownership may not take place despite payment of the sale price, while the seller is protected against the risk of not collecting the sale price despite completion of the registration. Since, pursuant to Article 705 of the Turkish Civil Code, real estate ownership is, as a rule, acquired by registration, making payment and registration simultaneous is of practical importance.",
+              "Making the payment through traceable and documentable channels will contribute to reducing informality in terms of title deed fees and capital gains by making it more difficult to show the sale price artificially low. It is also intended to prevent risks associated with cash payments by hand, such as counterfeit money, theft, fraud, and evidentiary difficulties.",
+              "However, the safeguard provided by the system is essentially limited to the simultaneity of registration and payment of the sale price. The provisions regarding the official form of real estate sale contracts under Article 706 of the Turkish Civil Code and Article 237 of the Turkish Code of Obligations are reserved. Matters such as delivery of the real estate, liability for defects, earnest money or withdrawal money, payment plan, encumbrances, zoning status, and similar issues continue to require separate legal review and clear regulation in the contract.",
+              "Issues such as the types of sales to be excluded from the system, the scope of the usage fee, the duties and responsibilities of the institutions that will operate the system, and compliance with foreign exchange legislation in transactions involving foreign buyers are expected to become clear through secondary regulations and implementation announcements to be published by the Ministry.",
+            ],
+          },
+          {
+            paragraphs: [
+              "In conclusion, the secure payment system is an important regulation aimed at reducing the performance risk between payment of the price and transfer of ownership in real estate sales. The implementation is expected to increase transaction security and transparency, reduce the risk of disputes, and support registered transactions in the real estate market. However, the system does not replace pre-sale legal review or the preparation of a contract suitable for the specific transaction.",
+            ],
+          },
+          {
+            heading: "Legal Disclaimer",
+            paragraphs: [
+              "This content has been prepared solely for general informational purposes and does not constitute a legal opinion, legal memorandum, or legal advice. You may contact us for legal assessment and advice requests concerning specific matters.",
+              "All rights reserved.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
     id: "blank-signature",
     image: "/articles/beyaza-imza.jpg",
     publishedAt: "2024-05-12",
